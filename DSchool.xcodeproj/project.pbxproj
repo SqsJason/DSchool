@@ -80,6 +80,15 @@
 		EF8BA3431B1DDFA0008305A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BA3421B1DDFA0008305A0 /* UIKit.framework */; };
 		EF8BA3451B1DDFAC008305A0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BA3441B1DDFAC008305A0 /* CFNetwork.framework */; };
 		EF8BA3471B1DDFBA008305A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BA3461B1DDFB9008305A0 /* SystemConfiguration.framework */; };
+		EF8BA3491B1DE5B6008305A0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BA3481B1DE5B6008305A0 /* CoreFoundation.framework */; };
+		EF8BA34B1B1DE5BE008305A0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BA34A1B1DE5BE008305A0 /* CoreTelephony.framework */; };
+		EF8BA34D1B1DE5CB008305A0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BA34C1B1DE5CB008305A0 /* Security.framework */; };
+		EF8BA34F1B1DE5D0008305A0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BA34E1B1DE5D0008305A0 /* MobileCoreServices.framework */; };
+		EF8BA3511B1DE5DC008305A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BA3501B1DE5DC008305A0 /* CoreGraphics.framework */; };
+		EF8BA35B1B1DEDE5008305A0 /* VCDLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA3591B1DEDE5008305A0 /* VCDLogin.m */; };
+		EF8BA35C1B1DEDE5008305A0 /* VCDLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8BA35A1B1DEDE5008305A0 /* VCDLogin.xib */; };
+		EF8BA3611B1E0D20008305A0 /* VCDSignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA35F1B1E0D20008305A0 /* VCDSignUp.m */; };
+		EF8BA3621B1E0D20008305A0 /* VCDSignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8BA3601B1E0D20008305A0 /* VCDSignUp.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +230,17 @@
 		EF8BA3421B1DDFA0008305A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EF8BA3441B1DDFAC008305A0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		EF8BA3461B1DDFB9008305A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EF8BA3481B1DE5B6008305A0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EF8BA34A1B1DE5BE008305A0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		EF8BA34C1B1DE5CB008305A0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EF8BA34E1B1DE5D0008305A0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EF8BA3501B1DE5DC008305A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF8BA3581B1DEDE5008305A0 /* VCDLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDLogin.h; sourceTree = "<group>"; };
+		EF8BA3591B1DEDE5008305A0 /* VCDLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDLogin.m; sourceTree = "<group>"; };
+		EF8BA35A1B1DEDE5008305A0 /* VCDLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDLogin.xib; sourceTree = "<group>"; };
+		EF8BA35E1B1E0D20008305A0 /* VCDSignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDSignUp.h; sourceTree = "<group>"; };
+		EF8BA35F1B1E0D20008305A0 /* VCDSignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDSignUp.m; sourceTree = "<group>"; };
+		EF8BA3601B1E0D20008305A0 /* VCDSignUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDSignUp.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +248,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8BA3511B1DE5DC008305A0 /* CoreGraphics.framework in Frameworks */,
+				EF8BA34F1B1DE5D0008305A0 /* MobileCoreServices.framework in Frameworks */,
+				EF8BA34D1B1DE5CB008305A0 /* Security.framework in Frameworks */,
+				EF8BA34B1B1DE5BE008305A0 /* CoreTelephony.framework in Frameworks */,
+				EF8BA3491B1DE5B6008305A0 /* CoreFoundation.framework in Frameworks */,
 				EF8BA3471B1DDFBA008305A0 /* SystemConfiguration.framework in Frameworks */,
 				EF8BA3451B1DDFAC008305A0 /* CFNetwork.framework in Frameworks */,
 				EF8BA3431B1DDFA0008305A0 /* UIKit.framework in Frameworks */,
@@ -249,6 +274,11 @@
 		04C43EF7929A27AF7DAD3619 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF8BA3501B1DE5DC008305A0 /* CoreGraphics.framework */,
+				EF8BA34E1B1DE5D0008305A0 /* MobileCoreServices.framework */,
+				EF8BA34C1B1DE5CB008305A0 /* Security.framework */,
+				EF8BA34A1B1DE5BE008305A0 /* CoreTelephony.framework */,
+				EF8BA3481B1DE5B6008305A0 /* CoreFoundation.framework */,
 				EF8BA3461B1DDFB9008305A0 /* SystemConfiguration.framework */,
 				EF8BA3441B1DDFAC008305A0 /* CFNetwork.framework */,
 				EF8BA3421B1DDFA0008305A0 /* UIKit.framework */,
@@ -398,16 +428,16 @@
 		EF8BA2A71B1DDEE3008305A0 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				EF8BA2E11B1DDEE3008305A0 /* SHXMLParser */,
+				EF8BA2D81B1DDEE3008305A0 /* PhotoGallery */,
 				EF8BA2A81B1DDEE3008305A0 /* ASTextField */,
 				EF8BA2B81B1DDEE3008305A0 /* EGOCache */,
 				EF8BA2BE1B1DDEE3008305A0 /* FloatMenu */,
 				EF8BA2C51B1DDEE3008305A0 /* LRImageManager */,
 				EF8BA2D61B1DDEE3008305A0 /* OLGhostAlertView.h */,
 				EF8BA2D71B1DDEE3008305A0 /* OLGhostAlertView.m */,
-				EF8BA2D81B1DDEE3008305A0 /* PhotoGallery */,
 				EF8BA2DF1B1DDEE3008305A0 /* Reachability.h */,
 				EF8BA2E01B1DDEE3008305A0 /* Reachability.m */,
-				EF8BA2E11B1DDEE3008305A0 /* SHXMLParser */,
 				EF8BA2E41B1DDEE3008305A0 /* TKRoundedView.h */,
 				EF8BA2E51B1DDEE3008305A0 /* TKRoundedView.m */,
 			);
@@ -526,6 +556,13 @@
 		EF8BA2E61B1DDEE3008305A0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EF8BA3531B1DE643008305A0 /* Login */,
+				EF8BA35D1B1E0D05008305A0 /* SignUp */,
+				EF8BA3571B1DE6C8008305A0 /* Settings */,
+				EF8BA3561B1DE692008305A0 /* Discovery */,
+				EF8BA3551B1DE657008305A0 /* Message */,
+				EF8BA3541B1DE64C008305A0 /* Home */,
+				EF8BA3521B1DE627008305A0 /* FirstView */,
 				EF8BA2E71B1DDEE3008305A0 /* BrowserListCell.h */,
 				EF8BA2E81B1DDEE3008305A0 /* BrowserListCell.m */,
 				EF8BA2E91B1DDEE3008305A0 /* BrowserListCell.xib */,
@@ -562,6 +599,61 @@
 				EF8BA2EF1B1DDEE3008305A0 /* GoodsSketchCell.m */,
 			);
 			path = LLHome;
+			sourceTree = "<group>";
+		};
+		EF8BA3521B1DE627008305A0 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FirstView;
+			sourceTree = "<group>";
+		};
+		EF8BA3531B1DE643008305A0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EF8BA3581B1DEDE5008305A0 /* VCDLogin.h */,
+				EF8BA3591B1DEDE5008305A0 /* VCDLogin.m */,
+				EF8BA35A1B1DEDE5008305A0 /* VCDLogin.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		EF8BA3541B1DE64C008305A0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		EF8BA3551B1DE657008305A0 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		EF8BA3561B1DE692008305A0 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Discovery;
+			sourceTree = "<group>";
+		};
+		EF8BA3571B1DE6C8008305A0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		EF8BA35D1B1E0D05008305A0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				EF8BA35E1B1E0D20008305A0 /* VCDSignUp.h */,
+				EF8BA35F1B1E0D20008305A0 /* VCDSignUp.m */,
+				EF8BA3601B1E0D20008305A0 /* VCDSignUp.xib */,
+			);
+			name = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -653,7 +745,9 @@
 				EF8BA3161B1DDEE3008305A0 /* password_icon@2x.png in Resources */,
 				EF8BA3151B1DDEE3008305A0 /* password_icon.png in Resources */,
 				EF8BA33F1B1DDEE3008305A0 /* VCSOrderDetail.xib in Resources */,
+				EF8BA35C1B1DEDE5008305A0 /* VCDLogin.xib in Resources */,
 				EF8BA3191B1DDEE3008305A0 /* login_button.png in Resources */,
+				EF8BA3621B1E0D20008305A0 /* VCDSignUp.xib in Resources */,
 				EF8BA3111B1DDEE3008305A0 /* round_textfield.png in Resources */,
 				EF8BA2681B1DDAE6008305A0 /* Main.storyboard in Resources */,
 				EF8BA33D1B1DDEE3008305A0 /* VCSLogin.xib in Resources */,
@@ -731,6 +825,7 @@
 				EF8BA3071B1DDEE3008305A0 /* ENGooCategory.m in Sources */,
 				EF8BA3241B1DDEE3008305A0 /* LRImagePresenter.m in Sources */,
 				EF8BA32E1B1DDEE3008305A0 /* TKRoundedView.m in Sources */,
+				EF8BA3611B1E0D20008305A0 /* VCDSignUp.m in Sources */,
 				EF8BA3261B1DDEE3008305A0 /* UIImage+LRImageManagerAdditions.m in Sources */,
 				EF8BA31E1B1DDEE3008305A0 /* README.mdown in Sources */,
 				EF8BA32F1B1DDEE3008305A0 /* BrowserListCell.m in Sources */,
@@ -739,6 +834,7 @@
 				EF8BA3381B1DDEE3008305A0 /* VCSBrowserList.m in Sources */,
 				EF8BA3081B1DDEE3008305A0 /* ENGoods.m in Sources */,
 				EF8BA3331B1DDEE3008305A0 /* GoodsSketchCell.m in Sources */,
+				EF8BA35B1B1DEDE5008305A0 /* VCDLogin.m in Sources */,
 				EF8BA30B1B1DDEE3008305A0 /* StandarViewController.m in Sources */,
 				EF8BA3251B1DDEE3008305A0 /* NSData+LRImageManagerAdditions.m in Sources */,
 				EF8BA3041B1DDEE3008305A0 /* ENGooAttItemRelation.m in Sources */,

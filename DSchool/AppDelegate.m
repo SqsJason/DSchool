@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "VCSLogin.h"
+#import "VCDLogin.h"
 #import "VCSHome.h"
 #import "SVLogin.h"
 #import "Config.h"
@@ -45,9 +45,9 @@
     [self.window makeKeyAndVisible];
     
     bgImage = [UIImage imageNamed:@"CommonBG"];
-    self.floatButtonView = [FloatView defaultFloatViewWithButtonImageNameArray:@[@"btn_tutorial.png",@"avatar_bg.png",@"avatar.png",@"btu_openFlashlight_off.png"]];
-    [self.floatButtonView showAlarmView];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(floatButtonClick:) name:FloatViewClickNotification object:nil];
+//    self.floatButtonView = [FloatView defaultFloatViewWithButtonImageNameArray:@[@"btn_tutorial.png",@"avatar_bg.png",@"avatar.png",@"btu_openFlashlight_off.png"]];
+//    [self.floatButtonView showAlarmView];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(floatButtonClick:) name:FloatViewClickNotification object:nil];
     
     return YES;
 }
@@ -161,7 +161,7 @@
     if (self.window.rootViewController!=nil) {
         self.window.rootViewController = nil;
     }
-    VCSLogin *loginPage            = [[VCSLogin alloc] initWithNibName:@"VCSLogin" bundle:nil];
+    VCDLogin *loginPage            = [[VCDLogin alloc] initWithNibName:@"VCDLogin" bundle:nil];
     self.window.rootViewController = loginPage;
 }
 

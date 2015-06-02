@@ -12,6 +12,9 @@
 #define k_GlobalColor_DarkBlue          [UIColor colorWithRed:42/255.0 green:91/255.0 blue:155/255.0 alpha:1.0]
 #define k_GlobalColor_Gray66            [UIColor colorWithRed:66/255.0 green:66/255.0 blue:66/255.0 alpha:1.0]
 
+////////////////// VCDLogin
+#define k_LoginColor_Header            [UIColor colorWithRed:69/255.0 green:225/255.0 blue:144/255.0 alpha:1.0]
+#define k_LoginColor_LoginButton       [UIColor colorWithRed:49/255.0 green:206/255.0 blue:121/255.0 alpha:1.0]
 ////////////////// UINavigationBar
 #pragma mark - UINavigationBar
 
