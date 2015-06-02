@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  ShipWarning
+
+  Created by iosdeveloper on 15/5/8.
+*/
+
+//////Overall
+"Str_Overall_RequestFailed"     = "网络请求失败，请稍后再试..";
+
+//////NSUserDefaults
+"Key_UserDefaults_Username"     = "Login_UserName";
+"Key_UserDefaults_Password"     = "Login_Password";
+
+
+//////AppDelegate
+
+
+//////VCSLogin
+"Str_Login_UsernameRequired"    = "用户不能为空..";
+"Str_Login_PasswordRequired"    = "密码不能为空..";
+"Str_Login_RequestFailed"       = "登陆失败，请稍后再试..";
+"Str_OrderList_RequestFailed"   = "未获取到订单信息..";
+"Str_Images_RequestFailed"      = "未获取到新的图片..";
+
+//////VCSHome
