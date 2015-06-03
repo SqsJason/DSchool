@@ -126,7 +126,7 @@
         if (isSignUp) {
             return 240;
         }else{
-            return 180;
+            return 190;
         }
     }else if(SCREEN_HEIGHT_PORTRAIT <= 736){
         if (isSignUp) {
