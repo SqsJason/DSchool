@@ -8,6 +8,7 @@
 
 #import "VCDLogin.h"
 #import "VCDSignUp.h"
+#import "VCDSettings.h"
 
 @interface VCDLogin ()
 
@@ -106,12 +107,16 @@
 }
 
 - (IBAction)actLogin:(id)sender {
-    VCDSignUp *signUp = [[VCDSignUp alloc] initWithNibName:@"VCDSignUp" bundle:nil];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:signUp];
+    VCDSettings *settingVC = [[VCDSettings alloc] initWithNibName:@"VCDSettings" bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:settingVC];
     [self presentViewController:nav animated:YES completion:^{}];
 }
 
 - (IBAction)actGoRegister:(id)sender {
+    VCDSignUp *signUp = [[VCDSignUp alloc] initWithNibName:@"VCDSignUp" bundle:nil];
+    signUp.isSignUp = YES;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:signUp];
+    [self presentViewController:nav animated:YES completion:^{}];
 }
 
 - (IBAction)actWeChatLogin:(id)sender {

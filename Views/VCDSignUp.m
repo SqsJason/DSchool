@@ -15,21 +15,28 @@
 @end
 
 @implementation VCDSignUp
+@synthesize isSignUp;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.title = @"注册";
+    self.title = @"填写资料";
     
+    if (isSignUp) {
+        [self doSomeUIInitForSignUp];
+    }else{
+        [self doSomeUIInitForProfile];
+    }
+    
+    [_tblMainRegister reloadData];
+}
+
+- (void)doSomeUIInitForSignUp
+{
     //bake a cellArray to contain all cells
     self.registerCellArray = [NSMutableArray arrayWithObjects:_CellRegPhone, _CellRegVerify, _CellRegPassword, _CellRegConfirm, _CellRegMain, nil];
     
-    [self doSomeUIInit];
-}
-
-- (void)doSomeUIInit
-{
     _btnRegister.layer.cornerRadius = 5.0;
     _btnRegister.layer.masksToBounds = YES;
     [_btnRegister setBackgroundImage:[Util imageWithColorHigh:k_LoginColor_Header withLowColor:UIColorFromRGB(LCTTAlertFRBGBtnDoneLow) withsize:_btnLogin.frame withHeightBottom:0] forState:UIControlStateNormal];
@@ -59,6 +66,36 @@
     _tkvConfirm.borderWidth = 1.0f;
 }
 
+- (void)doSomeUIInitForProfile
+{
+    //bake a cellArray to contain all cells
+    self.registerCellArray = [NSMutableArray arrayWithObjects: _CellProfileHead, _CellRegNickName, _CellRegGender, _CellRegAge, _CellRegSchool, _CellRegDone, nil];
+    
+    _btnSignUpDone.layer.cornerRadius = 5.0;
+    _btnSignUpDone.layer.masksToBounds = YES;
+    [_btnSignUpDone setBackgroundImage:[Util imageWithColorHigh:k_LoginColor_Header withLowColor:UIColorFromRGB(LCTTAlertFRBGBtnDoneLow) withsize:_btnSignUpDone.frame withHeightBottom:0] forState:UIControlStateNormal];
+    
+    _tkvNickName.drawnBordersSides = TKDrawnBorderSidesAll;
+    _tkvNickName.borderColor = CLQAChatMsgBorder;
+    _tkvNickName.fillColor = [UIColor whiteColor];
+    _tkvNickName.borderWidth = 1.0f;
+    
+    _tkvGender.drawnBordersSides = TKDrawnBorderSidesRight | TKDrawnBorderSidesLeft | TKDrawnBorderSidesBottom;
+    _tkvGender.borderColor = CLQAChatMsgBorder;
+    _tkvGender.fillColor = [UIColor whiteColor];
+    _tkvGender.borderWidth = 1.0f;
+    
+    _tkvAge.drawnBordersSides = TKDrawnBorderSidesRight | TKDrawnBorderSidesLeft | TKDrawnBorderSidesBottom;
+    _tkvAge.borderColor = CLQAChatMsgBorder;
+    _tkvAge.fillColor = [UIColor whiteColor];
+    _tkvAge.borderWidth = 1.0f;
+    
+    _tkvSchool.drawnBordersSides = TKDrawnBorderSidesRight | TKDrawnBorderSidesLeft | TKDrawnBorderSidesBottom;
+    _tkvSchool.borderColor = CLQAChatMsgBorder;
+    _tkvSchool.fillColor = [UIColor whiteColor];
+    _tkvSchool.borderWidth = 1.0f;
+}
+
 #pragma mark - tableview deleagate datasource stuff
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
@@ -80,11 +117,23 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     if (SCREEN_HEIGHT_PORTRAIT <= 568) {
-        return 150;
+        if (isSignUp) {
+            return 150;
+        }else{
+            return 110;
+        }
     }else if(SCREEN_HEIGHT_PORTRAIT <= 667){
-        return 240;
+        if (isSignUp) {
+            return 240;
+        }else{
+            return 180;
+        }
     }else if(SCREEN_HEIGHT_PORTRAIT <= 736){
-        return 310;
+        if (isSignUp) {
+            return 310;
+        }else{
+            return 260;
+        }
     }else{
         return 100;
     }
@@ -114,4 +163,20 @@
     return cell;
 }
 
+- (IBAction)actGetVerify:(id)sender {
+}
+
+- (IBAction)actRegister:(id)sender {
+    VCDSignUp *signFinishProfile = [[VCDSignUp alloc] initWithNibName:@"VCDSignUp" bundle:nil];
+    signFinishProfile.isSignUp = NO;
+    [self.navigationController pushViewController:signFinishProfile animated:YES];
+}
+
+- (IBAction)actGoLogin:(id)sender {
+    [appDelegate() showFirstView];
+}
+- (IBAction)actSignUpDone:(id)sender {
+}
+- (IBAction)actAddHeadImage:(id)sender {
+}
 @end

@@ -89,6 +89,8 @@
 		EF8BA35C1B1DEDE5008305A0 /* VCDLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8BA35A1B1DEDE5008305A0 /* VCDLogin.xib */; };
 		EF8BA3611B1E0D20008305A0 /* VCDSignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA35F1B1E0D20008305A0 /* VCDSignUp.m */; };
 		EF8BA3621B1E0D20008305A0 /* VCDSignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8BA3601B1E0D20008305A0 /* VCDSignUp.xib */; };
+		EF8BA3661B1E1EF0008305A0 /* VCDSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA3641B1E1EF0008305A0 /* VCDSettings.m */; };
+		EF8BA3671B1E1EF0008305A0 /* VCDSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8BA3651B1E1EF0008305A0 /* VCDSettings.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,32 +202,32 @@
 		EF8BA2E31B1DDEE3008305A0 /* SHXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHXMLParser.m; sourceTree = "<group>"; };
 		EF8BA2E41B1DDEE3008305A0 /* TKRoundedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRoundedView.h; sourceTree = "<group>"; };
 		EF8BA2E51B1DDEE3008305A0 /* TKRoundedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRoundedView.m; sourceTree = "<group>"; };
-		EF8BA2E71B1DDEE3008305A0 /* BrowserListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserListCell.h; sourceTree = "<group>"; };
-		EF8BA2E81B1DDEE3008305A0 /* BrowserListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserListCell.m; sourceTree = "<group>"; };
-		EF8BA2E91B1DDEE3008305A0 /* BrowserListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserListCell.xib; sourceTree = "<group>"; };
-		EF8BA2EA1B1DDEE3008305A0 /* CellHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHome.h; sourceTree = "<group>"; };
-		EF8BA2EB1B1DDEE3008305A0 /* CellHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellHome.m; sourceTree = "<group>"; };
-		EF8BA2EC1B1DDEE3008305A0 /* CellHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellHome.xib; sourceTree = "<group>"; };
+		EF8BA2E71B1DDEE3008305A0 /* BrowserListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowserListCell.h; path = ../BrowserListCell.h; sourceTree = "<group>"; };
+		EF8BA2E81B1DDEE3008305A0 /* BrowserListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserListCell.m; path = ../BrowserListCell.m; sourceTree = "<group>"; };
+		EF8BA2E91B1DDEE3008305A0 /* BrowserListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrowserListCell.xib; path = ../BrowserListCell.xib; sourceTree = "<group>"; };
+		EF8BA2EA1B1DDEE3008305A0 /* CellHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellHome.h; path = ../CellHome.h; sourceTree = "<group>"; };
+		EF8BA2EB1B1DDEE3008305A0 /* CellHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellHome.m; path = ../CellHome.m; sourceTree = "<group>"; };
+		EF8BA2EC1B1DDEE3008305A0 /* CellHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellHome.xib; path = ../CellHome.xib; sourceTree = "<group>"; };
 		EF8BA2EE1B1DDEE3008305A0 /* GoodsSketchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsSketchCell.h; sourceTree = "<group>"; };
 		EF8BA2EF1B1DDEE3008305A0 /* GoodsSketchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsSketchCell.m; sourceTree = "<group>"; };
-		EF8BA2F01B1DDEE3008305A0 /* SlideImagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideImagesCell.h; sourceTree = "<group>"; };
-		EF8BA2F11B1DDEE3008305A0 /* SlideImagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideImagesCell.m; sourceTree = "<group>"; };
-		EF8BA2F21B1DDEE3008305A0 /* SlideImagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideImagesCell.xib; sourceTree = "<group>"; };
-		EF8BA2F31B1DDEE3008305A0 /* VCSAlarmDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSAlarmDetail.h; sourceTree = "<group>"; };
-		EF8BA2F41B1DDEE3008305A0 /* VCSAlarmDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSAlarmDetail.m; sourceTree = "<group>"; };
-		EF8BA2F51B1DDEE3008305A0 /* VCSAlarmDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCSAlarmDetail.xib; sourceTree = "<group>"; };
-		EF8BA2F61B1DDEE3008305A0 /* VCSBrowserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSBrowserList.h; sourceTree = "<group>"; };
-		EF8BA2F71B1DDEE3008305A0 /* VCSBrowserList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSBrowserList.m; sourceTree = "<group>"; };
-		EF8BA2F81B1DDEE3008305A0 /* VCSBrowserList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCSBrowserList.xib; sourceTree = "<group>"; };
-		EF8BA2F91B1DDEE3008305A0 /* VCSHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSHome.h; sourceTree = "<group>"; };
-		EF8BA2FA1B1DDEE3008305A0 /* VCSHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSHome.m; sourceTree = "<group>"; };
-		EF8BA2FB1B1DDEE3008305A0 /* VCSHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCSHome.xib; sourceTree = "<group>"; };
-		EF8BA2FC1B1DDEE3008305A0 /* VCSLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSLogin.h; sourceTree = "<group>"; };
-		EF8BA2FD1B1DDEE3008305A0 /* VCSLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSLogin.m; sourceTree = "<group>"; };
-		EF8BA2FE1B1DDEE3008305A0 /* VCSLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCSLogin.xib; sourceTree = "<group>"; };
-		EF8BA2FF1B1DDEE3008305A0 /* VCSOrderDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSOrderDetail.h; sourceTree = "<group>"; };
-		EF8BA3001B1DDEE3008305A0 /* VCSOrderDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSOrderDetail.m; sourceTree = "<group>"; };
-		EF8BA3011B1DDEE3008305A0 /* VCSOrderDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCSOrderDetail.xib; sourceTree = "<group>"; };
+		EF8BA2F01B1DDEE3008305A0 /* SlideImagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlideImagesCell.h; path = ../SlideImagesCell.h; sourceTree = "<group>"; };
+		EF8BA2F11B1DDEE3008305A0 /* SlideImagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlideImagesCell.m; path = ../SlideImagesCell.m; sourceTree = "<group>"; };
+		EF8BA2F21B1DDEE3008305A0 /* SlideImagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SlideImagesCell.xib; path = ../SlideImagesCell.xib; sourceTree = "<group>"; };
+		EF8BA2F31B1DDEE3008305A0 /* VCSAlarmDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCSAlarmDetail.h; path = ../VCSAlarmDetail.h; sourceTree = "<group>"; };
+		EF8BA2F41B1DDEE3008305A0 /* VCSAlarmDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCSAlarmDetail.m; path = ../VCSAlarmDetail.m; sourceTree = "<group>"; };
+		EF8BA2F51B1DDEE3008305A0 /* VCSAlarmDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VCSAlarmDetail.xib; path = ../VCSAlarmDetail.xib; sourceTree = "<group>"; };
+		EF8BA2F61B1DDEE3008305A0 /* VCSBrowserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCSBrowserList.h; path = ../VCSBrowserList.h; sourceTree = "<group>"; };
+		EF8BA2F71B1DDEE3008305A0 /* VCSBrowserList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCSBrowserList.m; path = ../VCSBrowserList.m; sourceTree = "<group>"; };
+		EF8BA2F81B1DDEE3008305A0 /* VCSBrowserList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VCSBrowserList.xib; path = ../VCSBrowserList.xib; sourceTree = "<group>"; };
+		EF8BA2F91B1DDEE3008305A0 /* VCSHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCSHome.h; path = ../VCSHome.h; sourceTree = "<group>"; };
+		EF8BA2FA1B1DDEE3008305A0 /* VCSHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCSHome.m; path = ../VCSHome.m; sourceTree = "<group>"; };
+		EF8BA2FB1B1DDEE3008305A0 /* VCSHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VCSHome.xib; path = ../VCSHome.xib; sourceTree = "<group>"; };
+		EF8BA2FC1B1DDEE3008305A0 /* VCSLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCSLogin.h; path = ../VCSLogin.h; sourceTree = "<group>"; };
+		EF8BA2FD1B1DDEE3008305A0 /* VCSLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCSLogin.m; path = ../VCSLogin.m; sourceTree = "<group>"; };
+		EF8BA2FE1B1DDEE3008305A0 /* VCSLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VCSLogin.xib; path = ../VCSLogin.xib; sourceTree = "<group>"; };
+		EF8BA2FF1B1DDEE3008305A0 /* VCSOrderDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCSOrderDetail.h; path = ../VCSOrderDetail.h; sourceTree = "<group>"; };
+		EF8BA3001B1DDEE3008305A0 /* VCSOrderDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCSOrderDetail.m; path = ../VCSOrderDetail.m; sourceTree = "<group>"; };
+		EF8BA3011B1DDEE3008305A0 /* VCSOrderDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VCSOrderDetail.xib; path = ../VCSOrderDetail.xib; sourceTree = "<group>"; };
 		EF8BA3401B1DDF9A008305A0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		EF8BA3421B1DDFA0008305A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EF8BA3441B1DDFAC008305A0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -241,6 +243,9 @@
 		EF8BA35E1B1E0D20008305A0 /* VCDSignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDSignUp.h; sourceTree = "<group>"; };
 		EF8BA35F1B1E0D20008305A0 /* VCDSignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDSignUp.m; sourceTree = "<group>"; };
 		EF8BA3601B1E0D20008305A0 /* VCDSignUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDSignUp.xib; sourceTree = "<group>"; };
+		EF8BA3631B1E1EF0008305A0 /* VCDSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDSettings.h; sourceTree = "<group>"; };
+		EF8BA3641B1E1EF0008305A0 /* VCDSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDSettings.m; sourceTree = "<group>"; };
+		EF8BA3651B1E1EF0008305A0 /* VCDSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDSettings.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,8 +336,8 @@
 				EF8BA2631B1DDAE6008305A0 /* ViewController.h */,
 				EF8BA2641B1DDAE6008305A0 /* ViewController.m */,
 				EF8BA2661B1DDAE6008305A0 /* Main.storyboard */,
-				EF8BA2691B1DDAE6008305A0 /* Images.xcassets */,
 				EF8BA26B1B1DDAE6008305A0 /* LaunchScreen.xib */,
+				EF8BA2691B1DDAE6008305A0 /* Images.xcassets */,
 				EF8BA25C1B1DDAE6008305A0 /* Supporting Files */,
 			);
 			path = DSchool;
@@ -563,13 +568,20 @@
 				EF8BA3551B1DE657008305A0 /* Message */,
 				EF8BA3541B1DE64C008305A0 /* Home */,
 				EF8BA3521B1DE627008305A0 /* FirstView */,
+				EF8BA2ED1B1DDEE3008305A0 /* LLHome */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF8BA2ED1B1DDEE3008305A0 /* LLHome */ = {
+			isa = PBXGroup;
+			children = (
 				EF8BA2E71B1DDEE3008305A0 /* BrowserListCell.h */,
 				EF8BA2E81B1DDEE3008305A0 /* BrowserListCell.m */,
 				EF8BA2E91B1DDEE3008305A0 /* BrowserListCell.xib */,
 				EF8BA2EA1B1DDEE3008305A0 /* CellHome.h */,
 				EF8BA2EB1B1DDEE3008305A0 /* CellHome.m */,
 				EF8BA2EC1B1DDEE3008305A0 /* CellHome.xib */,
-				EF8BA2ED1B1DDEE3008305A0 /* LLHome */,
 				EF8BA2F01B1DDEE3008305A0 /* SlideImagesCell.h */,
 				EF8BA2F11B1DDEE3008305A0 /* SlideImagesCell.m */,
 				EF8BA2F21B1DDEE3008305A0 /* SlideImagesCell.xib */,
@@ -588,13 +600,6 @@
 				EF8BA2FF1B1DDEE3008305A0 /* VCSOrderDetail.h */,
 				EF8BA3001B1DDEE3008305A0 /* VCSOrderDetail.m */,
 				EF8BA3011B1DDEE3008305A0 /* VCSOrderDetail.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		EF8BA2ED1B1DDEE3008305A0 /* LLHome */ = {
-			isa = PBXGroup;
-			children = (
 				EF8BA2EE1B1DDEE3008305A0 /* GoodsSketchCell.h */,
 				EF8BA2EF1B1DDEE3008305A0 /* GoodsSketchCell.m */,
 			);
@@ -642,6 +647,9 @@
 		EF8BA3571B1DE6C8008305A0 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				EF8BA3631B1E1EF0008305A0 /* VCDSettings.h */,
+				EF8BA3641B1E1EF0008305A0 /* VCDSettings.m */,
+				EF8BA3651B1E1EF0008305A0 /* VCDSettings.xib */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -742,6 +750,7 @@
 				EF8BA3351B1DDEE3008305A0 /* SlideImagesCell.xib in Resources */,
 				EF8BA31A1B1DDEE3008305A0 /* login_button@2x.png in Resources */,
 				EF8BA3171B1DDEE3008305A0 /* user_name_icon.png in Resources */,
+				EF8BA3671B1E1EF0008305A0 /* VCDSettings.xib in Resources */,
 				EF8BA3161B1DDEE3008305A0 /* password_icon@2x.png in Resources */,
 				EF8BA3151B1DDEE3008305A0 /* password_icon.png in Resources */,
 				EF8BA33F1B1DDEE3008305A0 /* VCSOrderDetail.xib in Resources */,
@@ -828,6 +837,7 @@
 				EF8BA3611B1E0D20008305A0 /* VCDSignUp.m in Sources */,
 				EF8BA3261B1DDEE3008305A0 /* UIImage+LRImageManagerAdditions.m in Sources */,
 				EF8BA31E1B1DDEE3008305A0 /* README.mdown in Sources */,
+				EF8BA3661B1E1EF0008305A0 /* VCDSettings.m in Sources */,
 				EF8BA32F1B1DDEE3008305A0 /* BrowserListCell.m in Sources */,
 				EF8BA3341B1DDEE3008305A0 /* SlideImagesCell.m in Sources */,
 				EF8BA30E1B1DDEE3008305A0 /* SVLoadImage.m in Sources */,

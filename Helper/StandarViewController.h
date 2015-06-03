@@ -21,4 +21,5 @@ typedef NS_ENUM(NSUInteger, BrowserListStyle) {
 
 @interface StandarViewController : UIViewController
 
+@property (nonatomic) BOOL isNotBackModel;
 @end

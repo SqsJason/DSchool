@@ -6,23 +6,38 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCDSignUp">
             <connections>
+                <outlet property="CellProfileHead" destination="DKr-su-HJf" id="EIe-tw-5uY"/>
+                <outlet property="CellRegAge" destination="Ign-dg-BTl" id="dRS-fN-xmz"/>
                 <outlet property="CellRegConfirm" destination="92i-bJ-I3e" id="dPZ-RK-z1Q"/>
+                <outlet property="CellRegDone" destination="O0t-Xu-OrD" id="p3L-vr-jr4"/>
+                <outlet property="CellRegGender" destination="IIU-in-IdX" id="qWI-cj-ADH"/>
                 <outlet property="CellRegMain" destination="zgI-jL-A4W" id="G8h-h4-jYJ"/>
+                <outlet property="CellRegNickName" destination="mPV-oa-grR" id="DDy-cF-L5t"/>
                 <outlet property="CellRegPassword" destination="tPl-Zm-UoA" id="lXf-zK-vN1"/>
                 <outlet property="CellRegPhone" destination="x3G-gK-hjD" id="9ds-pC-4Ue"/>
+                <outlet property="CellRegSchool" destination="2gR-Eq-vtJ" id="uyR-Tk-Tji"/>
                 <outlet property="CellRegVerify" destination="AyI-r9-k8I" id="JSZ-1Q-WzV"/>
+                <outlet property="btnAddHead" destination="hbl-wI-t0K" id="sNk-4Q-U6V"/>
                 <outlet property="btnGetVerifyCode" destination="IVr-QJ-Oty" id="deg-ND-UKG"/>
                 <outlet property="btnLogin" destination="ZJn-C0-ns2" id="dx5-HA-0OA"/>
+                <outlet property="btnLoginDone" destination="3Zt-D9-deC" id="zFT-hD-g7a"/>
                 <outlet property="btnRegister" destination="yCA-ae-HIl" id="kDN-tm-I8A"/>
+                <outlet property="btnSignUpDone" destination="y8P-H5-iGF" id="iRs-cZ-p4I"/>
+                <outlet property="imvHeadImage" destination="Ckm-d9-PWd" id="du2-7I-ohO"/>
                 <outlet property="imvSeperator" destination="Njf-G8-XxM" id="C12-pF-U9m"/>
+                <outlet property="imvSeperatorDone" destination="551-Qm-XTo" id="47W-dr-BFW"/>
                 <outlet property="tblMainRegister" destination="PdI-Hv-JiD" id="oM1-B8-CvZ"/>
                 <outlet property="tfRegConfirm" destination="YSN-jh-YAc" id="mlQ-XR-zvG"/>
                 <outlet property="tfRegPassword" destination="mdl-cF-xFl" id="YKC-LT-Jt8"/>
                 <outlet property="tfRegPhone" destination="pUx-GI-VyW" id="Pn5-7U-Smr"/>
                 <outlet property="tfRegVerify" destination="thJ-fe-ICB" id="AjS-Ju-klO"/>
+                <outlet property="tkvAge" destination="HAD-Dk-QL7" id="xBh-9I-5w7"/>
                 <outlet property="tkvConfirm" destination="d4q-Rx-Fab" id="sgj-fm-yWE"/>
+                <outlet property="tkvGender" destination="nPf-w8-FXs" id="cnS-Q5-AKT"/>
+                <outlet property="tkvNickName" destination="VHh-i9-JpH" id="p8I-iu-d0E"/>
                 <outlet property="tkvPassword" destination="2Rv-7E-uzR" id="Rc8-WB-8B9"/>
                 <outlet property="tkvPhone" destination="gUt-Wh-Fme" id="wJH-w2-VS2"/>
+                <outlet property="tkvSchool" destination="egc-KT-7Bk" id="Kco-8f-PiT"/>
                 <outlet property="tkvVerify" destination="BAo-bh-j2F" id="5Sj-xk-dVp"/>
                 <outlet property="vFooter" destination="5uW-8K-2ZN" id="XeK-fJ-kxg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -45,7 +60,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <point key="canvasLocation" x="-68" y="251"/>
+            <point key="canvasLocation" x="-287" y="245"/>
         </view>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="x3G-gK-hjD">
             <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
@@ -68,7 +83,7 @@
                     </view>
                 </subviews>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="286" y="7"/>
+            <point key="canvasLocation" x="67" y="1"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AyI-r9-k8I">
             <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -90,6 +105,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actGetVerify:" destination="-1" eventType="touchUpInside" id="77y-y5-HIr"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" minimumFontSize="17" id="thJ-fe-ICB">
                                 <rect key="frame" x="20" y="0.0" width="176" height="40"/>
@@ -101,7 +119,7 @@
                     </view>
                 </subviews>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="287" y="100"/>
+            <point key="canvasLocation" x="68" y="94"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tPl-Zm-UoA">
             <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -124,7 +142,7 @@
                     </view>
                 </subviews>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="287" y="175"/>
+            <point key="canvasLocation" x="68" y="169"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="92i-bJ-I3e">
             <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
@@ -152,7 +170,7 @@
                     </imageView>
                 </subviews>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="286" y="271"/>
+            <point key="canvasLocation" x="67" y="265"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="zgI-jL-A4W">
             <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
@@ -170,6 +188,9 @@
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="actRegister:" destination="-1" eventType="touchUpInside" id="FHp-y5-8gf"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZJn-C0-ns2">
                         <rect key="frame" x="35" y="107" width="129" height="32.5"/>
@@ -179,10 +200,13 @@
                             <color key="titleColor" red="0.50364977899999996" green="0.50364977899999996" blue="0.50364977899999996" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="actGoLogin:" destination="-1" eventType="touchUpInside" id="0S7-wd-4wB"/>
+                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="287" y="406"/>
+            <point key="canvasLocation" x="68" y="400"/>
         </tableViewCell>
         <view contentMode="scaleToFill" id="5uW-8K-2ZN">
             <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
@@ -203,11 +227,192 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="287" y="636"/>
+            <point key="canvasLocation" x="68" y="636"/>
         </view>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="mPV-oa-grR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mPV-oa-grR" id="8lq-pX-X0I">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="VHh-i9-JpH" customClass="TKRoundedView">
+                        <rect key="frame" x="20" y="0.0" width="280" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入昵称" minimumFontSize="17" id="hHD-SO-70I">
+                                <rect key="frame" x="35" y="0.0" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_register_nick_name" id="3Yz-Nl-gnZ">
+                                <rect key="frame" x="5" y="9" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="425" y="169"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="IIU-in-IdX">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IIU-in-IdX" id="N8R-DZ-9jm">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="nPf-w8-FXs" customClass="TKRoundedView">
+                        <rect key="frame" x="20" y="0.0" width="280" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="性别" minimumFontSize="17" id="CUN-MC-TWz">
+                                <rect key="frame" x="35" y="0.0" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_register_gender" id="aEi-fZ-tEb">
+                                <rect key="frame" x="5" y="9" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="425" y="246"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ign-dg-BTl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ign-dg-BTl" id="6qA-OV-qMh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="HAD-Dk-QL7" customClass="TKRoundedView">
+                        <rect key="frame" x="20" y="0.0" width="280" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="年龄" minimumFontSize="17" id="kcx-ci-TIx">
+                                <rect key="frame" x="35" y="0.0" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_register_age" id="uPZ-bq-daP">
+                                <rect key="frame" x="5" y="9" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="425" y="327"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="2gR-Eq-vtJ">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2gR-Eq-vtJ" id="ZTx-l5-W11">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="egc-KT-7Bk" customClass="TKRoundedView">
+                        <rect key="frame" x="20" y="0.0" width="280" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="所在学校" minimumFontSize="17" id="tMB-3m-wCU">
+                                <rect key="frame" x="35" y="0.0" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_register_school" id="B3n-Xg-gVp">
+                                <rect key="frame" x="5" y="9" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="551-Qm-XTo">
+                        <rect key="frame" x="0.0" y="58" width="320" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.84343434340000001" green="0.84343434340000001" blue="0.84343434340000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="425" y="420"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="115" id="O0t-Xu-OrD">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O0t-Xu-OrD" id="NfW-WQ-Ydn">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y8P-H5-iGF">
+                        <rect key="frame" x="35" y="15" width="250" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.09543396942" green="0.78282828280000005" blue="0.38075053479999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <state key="normal" title="完  成">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="actSignUpDone:" destination="-1" eventType="touchUpInside" id="GQQ-Wy-IAo"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Zt-D9-deC">
+                        <rect key="frame" x="35" y="78" width="129" height="32.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                        <state key="normal" title="已有账号？点击登录">
+                            <color key="titleColor" red="0.50364977899999996" green="0.50364977899999996" blue="0.50364977899999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="actGoLogin:" destination="-1" eventType="touchUpInside" id="PrJ-fo-0H8"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="425" y="559"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="DKr-su-HJf">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DKr-su-HJf" id="j5k-7u-c4p">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_register_head" id="Ckm-d9-PWd">
+                        <rect key="frame" x="120" y="10" width="80" height="80"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hbl-wI-t0K">
+                        <rect key="frame" x="120" y="10" width="80" height="95.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="9"/>
+                        <state key="normal" title="添加头像照片">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="actAddHeadImage:" destination="-1" eventType="touchUpInside" id="tnl-Gf-q77"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="424" y="55"/>
+        </tableViewCell>
     </objects>
     <resources>
+        <image name="icon_register_age" width="40" height="40"/>
         <image name="icon_register_footer_bg" width="720" height="460"/>
+        <image name="icon_register_gender" width="40" height="40"/>
+        <image name="icon_register_head" width="180" height="180"/>
+        <image name="icon_register_nick_name" width="40" height="40"/>
+        <image name="icon_register_school" width="40" height="40"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

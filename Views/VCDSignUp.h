@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tblMainRegister;
 
+/********Cell for signup********/
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellRegPhone;
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellRegVerify;
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellRegPassword;
@@ -20,7 +21,32 @@
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellRegMain;
 @property (strong, nonatomic) IBOutlet UIView *vFooter;
 
-/********TKRoundedViews********/
+/********Cell for profile********/
+@property (strong, nonatomic) IBOutlet UITableViewCell *CellRegNickName;
+@property (strong, nonatomic) IBOutlet UITableViewCell *CellRegGender;
+@property (strong, nonatomic) IBOutlet UITableViewCell *CellRegAge;
+@property (strong, nonatomic) IBOutlet UITableViewCell *CellRegSchool;
+@property (strong, nonatomic) IBOutlet UITableViewCell *CellRegDone;
+@property (strong, nonatomic) IBOutlet UITableViewCell *CellProfileHead;
+
+
+/********TKRoundedViews For Profile********/
+@property (weak, nonatomic) IBOutlet TKRoundedView *tkvNickName;
+@property (weak, nonatomic) IBOutlet TKRoundedView *tkvGender;
+@property (weak, nonatomic) IBOutlet TKRoundedView *tkvAge;
+@property (weak, nonatomic) IBOutlet TKRoundedView *tkvSchool;
+@property (weak, nonatomic) IBOutlet UIImageView *imvSeperatorDone;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnSignUpDone;
+- (IBAction)actSignUpDone:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnLoginDone;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imvHeadImage;
+@property (weak, nonatomic) IBOutlet UIButton *btnAddHead;
+- (IBAction)actAddHeadImage:(id)sender;
+
+
+/********TKRoundedViews For SignUp********/
 @property (weak, nonatomic) IBOutlet TKRoundedView *tkvPhone;
 @property (weak, nonatomic) IBOutlet TKRoundedView *tkvVerify;
 @property (weak, nonatomic) IBOutlet TKRoundedView *tkvPassword;
@@ -37,5 +63,12 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnRegister;
 @property (weak, nonatomic) IBOutlet UIButton *btnLogin;
 @property (weak, nonatomic) IBOutlet UIImageView *imvSeperator;
+
+/********Button actions********/
+- (IBAction)actGetVerify:(id)sender;
+- (IBAction)actRegister:(id)sender;
+- (IBAction)actGoLogin:(id)sender;
+
+@property(nonatomic) BOOL isSignUp;
 
 @end
