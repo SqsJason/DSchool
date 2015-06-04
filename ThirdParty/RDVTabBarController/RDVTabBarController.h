@@ -23,10 +23,11 @@
 
 #import <UIKit/UIKit.h>
 #import "RDVTabBar.h"
+#import "StandarViewController.h"
 
 @protocol RDVTabBarControllerDelegate;
 
-@interface RDVTabBarController : UIViewController <RDVTabBarDelegate>
+@interface RDVTabBarController : StandarViewController <RDVTabBarDelegate>
 
 /**
  * The tab bar controller’s delegate object.

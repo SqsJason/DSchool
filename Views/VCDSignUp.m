@@ -21,11 +21,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.title = @"填写资料";
-    
     if (isSignUp) {
+        self.title = @"注册";
         [self doSomeUIInitForSignUp];
     }else{
+        self.title = @"填写资料";
         [self doSomeUIInitForProfile];
     }
     

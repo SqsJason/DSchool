@@ -107,9 +107,7 @@
 }
 
 - (IBAction)actLogin:(id)sender {
-    VCDSettings *settingVC = [[VCDSettings alloc] initWithNibName:@"VCDSettings" bundle:nil];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:settingVC];
-    [self presentViewController:nav animated:YES completion:^{}];
+    [appDelegate() showMainView];
 }
 
 - (IBAction)actGoRegister:(id)sender {

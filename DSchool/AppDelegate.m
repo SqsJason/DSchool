@@ -11,6 +11,12 @@
 #import "VCSHome.h"
 #import "SVLogin.h"
 #import "Config.h"
+#import "RDVTabBarController.h"
+#import "RDVTabBarItem.h"
+#import "VCDSignUp.h"
+#import "VCSHome.h"
+#import "VCDMessages.h"
+#import "VCDSettings.h"
 
 @interface AppDelegate ()
 
@@ -45,11 +51,84 @@
     [self.window makeKeyAndVisible];
     
     bgImage = [UIImage imageNamed:@"CommonBG"];
-//    self.floatButtonView = [FloatView defaultFloatViewWithButtonImageNameArray:@[@"btn_tutorial.png",@"avatar_bg.png",@"avatar.png",@"btu_openFlashlight_off.png"]];
-//    [self.floatButtonView showAlarmView];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(floatButtonClick:) name:FloatViewClickNotification object:nil];
-    
+
     return YES;
+}
+
+#pragma mark - Methods
+
+- (RDVTabBarController *)setupViewControllers {
+    UIViewController *firstViewController = [[VCDSignUp alloc] init];
+    UIViewController *firstNavigationController = [[UINavigationController alloc]
+                                                   initWithRootViewController:firstViewController];
+    
+    UIViewController *secondViewController = [[VCDMessages alloc] init];
+    UIViewController *secondNavigationController = [[UINavigationController alloc]
+                                                    initWithRootViewController:secondViewController];
+    
+    UIViewController *thirdViewController = [[VCDSettings alloc] init];
+    UIViewController *thirdNavigationController = [[UINavigationController alloc]
+                                                   initWithRootViewController:thirdViewController];
+    
+    UIViewController *fourthViewController = [[VCDSettings alloc] init];
+    UIViewController *fourthNavigationController = [[UINavigationController alloc]
+                                                   initWithRootViewController:fourthViewController];
+    
+    RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
+    [tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,
+                                           thirdNavigationController,fourthNavigationController]];
+    [self customizeTabBarForController:tabBarController];
+    
+    return tabBarController;
+}
+
+- (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
+    UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
+    UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
+    NSArray *tabBarItemImages = @[@"home", @"message", @"discovery", @"mine"];
+    
+    NSInteger index = 0;
+    for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
+        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"icon_tab_%@_selected",
+                                                      [tabBarItemImages objectAtIndex:index]]];
+        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"icon_tab_%@_normal",
+                                                        [tabBarItemImages objectAtIndex:index]]];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        
+        index++;
+    }
+}
+
+- (void)customizeInterface {
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    
+    UIImage *backgroundImage = nil;
+    NSDictionary *textAttributes = nil;
+    
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+        backgroundImage = [UIImage imageNamed:@"navigationbar_background_tall"];
+        
+        textAttributes = @{
+                           NSFontAttributeName: [UIFont boldSystemFontOfSize:18],
+                           NSForegroundColorAttributeName: [UIColor blackColor],
+                           };
+    } else {
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+        backgroundImage = [UIImage imageNamed:@"navigationbar_background"];
+        
+        textAttributes = @{
+                           UITextAttributeFont: [UIFont boldSystemFontOfSize:18],
+                           UITextAttributeTextColor: [UIColor blackColor],
+                           UITextAttributeTextShadowColor: [UIColor clearColor],
+                           UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero],
+                           };
+#endif
+    }
+    
+    [navigationBarAppearance setBackgroundImage:backgroundImage
+                                  forBarMetrics:UIBarMetricsDefault];
+    [navigationBarAppearance setTitleTextAttributes:textAttributes];
 }
 
 #pragma mark - 报警信息悬浮按钮点击 -
@@ -151,8 +230,9 @@
     if (self.window.rootViewController!=nil) {
         self.window.rootViewController = nil;
     }
-    VCSHome *gotoHome              = [[VCSHome alloc] initWithNibName:@"VCSHome" bundle:nil];
-    UINavigationController *nav    = [[UINavigationController alloc] initWithRootViewController:gotoHome];
+//    VCSHome *gotoHome              = [[VCSHome alloc] initWithNibName:@"VCSHome" bundle:nil];
+    RDVTabBarController *mainTab   = [self setupViewControllers];
+    UINavigationController *nav    = [[UINavigationController alloc] initWithRootViewController:mainTab];
     self.window.rootViewController = nav;
 }
 
