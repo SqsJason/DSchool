@@ -91,6 +91,9 @@
 		EF8BA3621B1E0D20008305A0 /* VCDSignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8BA3601B1E0D20008305A0 /* VCDSignUp.xib */; };
 		EF8BA3661B1E1EF0008305A0 /* VCDSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA3641B1E1EF0008305A0 /* VCDSettings.m */; };
 		EF8BA3671B1E1EF0008305A0 /* VCDSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8BA3651B1E1EF0008305A0 /* VCDSettings.xib */; };
+		EFB2574E1B20903100E37F8D /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB257491B20903100E37F8D /* RDVTabBar.m */; };
+		EFB2574F1B20903100E37F8D /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2574B1B20903100E37F8D /* RDVTabBarController.m */; };
+		EFB257501B20903100E37F8D /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2574D1B20903100E37F8D /* RDVTabBarItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +249,12 @@
 		EF8BA3631B1E1EF0008305A0 /* VCDSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDSettings.h; sourceTree = "<group>"; };
 		EF8BA3641B1E1EF0008305A0 /* VCDSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDSettings.m; sourceTree = "<group>"; };
 		EF8BA3651B1E1EF0008305A0 /* VCDSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDSettings.xib; sourceTree = "<group>"; };
+		EFB257481B20903100E37F8D /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
+		EFB257491B20903100E37F8D /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
+		EFB2574A1B20903100E37F8D /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
+		EFB2574B1B20903100E37F8D /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
+		EFB2574C1B20903100E37F8D /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
+		EFB2574D1B20903100E37F8D /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +442,7 @@
 		EF8BA2A71B1DDEE3008305A0 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				EFB257471B20903100E37F8D /* RDVTabBarController */,
 				EF8BA2E11B1DDEE3008305A0 /* SHXMLParser */,
 				EF8BA2D81B1DDEE3008305A0 /* PhotoGallery */,
 				EF8BA2A81B1DDEE3008305A0 /* ASTextField */,
@@ -664,6 +674,20 @@
 			name = SignUp;
 			sourceTree = "<group>";
 		};
+		EFB257471B20903100E37F8D /* RDVTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				EFB257481B20903100E37F8D /* RDVTabBar.h */,
+				EFB257491B20903100E37F8D /* RDVTabBar.m */,
+				EFB2574A1B20903100E37F8D /* RDVTabBarController.h */,
+				EFB2574B1B20903100E37F8D /* RDVTabBarController.m */,
+				EFB2574C1B20903100E37F8D /* RDVTabBarItem.h */,
+				EFB2574D1B20903100E37F8D /* RDVTabBarItem.m */,
+			);
+			name = RDVTabBarController;
+			path = ../../DSchool/ThirdParty/RDVTabBarController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -840,6 +864,7 @@
 				EF8BA3661B1E1EF0008305A0 /* VCDSettings.m in Sources */,
 				EF8BA32F1B1DDEE3008305A0 /* BrowserListCell.m in Sources */,
 				EF8BA3341B1DDEE3008305A0 /* SlideImagesCell.m in Sources */,
+				EFB2574E1B20903100E37F8D /* RDVTabBar.m in Sources */,
 				EF8BA30E1B1DDEE3008305A0 /* SVLoadImage.m in Sources */,
 				EF8BA3381B1DDEE3008305A0 /* VCSBrowserList.m in Sources */,
 				EF8BA3081B1DDEE3008305A0 /* ENGoods.m in Sources */,
@@ -849,7 +874,9 @@
 				EF8BA3251B1DDEE3008305A0 /* NSData+LRImageManagerAdditions.m in Sources */,
 				EF8BA3041B1DDEE3008305A0 /* ENGooAttItemRelation.m in Sources */,
 				EF8BA3221B1DDEE3008305A0 /* LRImageManager.m in Sources */,
+				EFB257501B20903100E37F8D /* RDVTabBarItem.m in Sources */,
 				EF8BA3361B1DDEE3008305A0 /* VCSAlarmDetail.m in Sources */,
+				EFB2574F1B20903100E37F8D /* RDVTabBarController.m in Sources */,
 				EF8BA30F1B1DDEE3008305A0 /* SVLogin.m in Sources */,
 				EF8BA3271B1DDEE3008305A0 /* UIImageView+LRNetworking.m in Sources */,
 				EF8BA3231B1DDEE3008305A0 /* LRImageOperation.m in Sources */,
