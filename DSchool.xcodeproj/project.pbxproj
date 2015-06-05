@@ -98,6 +98,9 @@
 		EFB2575F1B20C55E00E37F8D /* VCDMessages.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB2575D1B20C55E00E37F8D /* VCDMessages.xib */; };
 		EFB257641B20C66100E37F8D /* CellMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB257621B20C66100E37F8D /* CellMessage.m */; };
 		EFB257651B20C66100E37F8D /* CellMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB257631B20C66100E37F8D /* CellMessage.xib */; };
+		EFB2576D1B21FA8700E37F8D /* MLBlackTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB257681B21FA8700E37F8D /* MLBlackTransition.m */; };
+		EFB2576E1B21FA8700E37F8D /* MLTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2576A1B21FA8700E37F8D /* MLTransitionAnimation.m */; };
+		EFB2576F1B21FA8700E37F8D /* UIViewController+MLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2576C1B21FA8700E37F8D /* UIViewController+MLTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +268,12 @@
 		EFB257611B20C66100E37F8D /* CellMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellMessage.h; sourceTree = "<group>"; };
 		EFB257621B20C66100E37F8D /* CellMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellMessage.m; sourceTree = "<group>"; };
 		EFB257631B20C66100E37F8D /* CellMessage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellMessage.xib; sourceTree = "<group>"; };
+		EFB257671B21FA8700E37F8D /* MLBlackTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLBlackTransition.h; sourceTree = "<group>"; };
+		EFB257681B21FA8700E37F8D /* MLBlackTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLBlackTransition.m; sourceTree = "<group>"; };
+		EFB257691B21FA8700E37F8D /* MLTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTransitionAnimation.h; sourceTree = "<group>"; };
+		EFB2576A1B21FA8700E37F8D /* MLTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTransitionAnimation.m; sourceTree = "<group>"; };
+		EFB2576B1B21FA8700E37F8D /* UIViewController+MLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MLTransition.h"; sourceTree = "<group>"; };
+		EFB2576C1B21FA8700E37F8D /* UIViewController+MLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MLTransition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -452,6 +461,7 @@
 		EF8BA2A71B1DDEE3008305A0 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				EFB257661B21FA8700E37F8D /* MLTransition */,
 				EFB257511B2092C300E37F8D /* RDVTabBarController */,
 				EF8BA2E11B1DDEE3008305A0 /* SHXMLParser */,
 				EF8BA2D81B1DDEE3008305A0 /* PhotoGallery */,
@@ -711,6 +721,19 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		EFB257661B21FA8700E37F8D /* MLTransition */ = {
+			isa = PBXGroup;
+			children = (
+				EFB257671B21FA8700E37F8D /* MLBlackTransition.h */,
+				EFB257681B21FA8700E37F8D /* MLBlackTransition.m */,
+				EFB257691B21FA8700E37F8D /* MLTransitionAnimation.h */,
+				EFB2576A1B21FA8700E37F8D /* MLTransitionAnimation.m */,
+				EFB2576B1B21FA8700E37F8D /* UIViewController+MLTransition.h */,
+				EFB2576C1B21FA8700E37F8D /* UIViewController+MLTransition.m */,
+			);
+			path = MLTransition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -872,9 +895,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB2576F1B21FA8700E37F8D /* UIViewController+MLTransition.m in Sources */,
 				EF8BA3211B1DDEE3008305A0 /* LRImageCache.m in Sources */,
 				EF8BA32A1B1DDEE3008305A0 /* FGalleryPhotoView.m in Sources */,
 				EF8BA30C1B1DDEE3008305A0 /* Util.m in Sources */,
+				EFB2576D1B21FA8700E37F8D /* MLBlackTransition.m in Sources */,
 				EF8BA3101B1DDEE3008305A0 /* ASTextField.m in Sources */,
 				EF8BA33E1B1DDEE3008305A0 /* VCSOrderDetail.m in Sources */,
 				EF8BA31B1B1DDEE3008305A0 /* EGOCache.m in Sources */,
@@ -916,6 +941,7 @@
 				EF8BA32C1B1DDEE3008305A0 /* Reachability.m in Sources */,
 				EFB2575E1B20C55E00E37F8D /* VCDMessages.m in Sources */,
 				EF8BA32D1B1DDEE3008305A0 /* SHXMLParser.m in Sources */,
+				EFB2576E1B21FA8700E37F8D /* MLTransitionAnimation.m in Sources */,
 				EF8BA3031B1DDEE3008305A0 /* ENBrand.m in Sources */,
 				EF8BA30D1B1DDEE3008305A0 /* SVGetOrderList.m in Sources */,
 				EF8BA25F1B1DDAE6008305A0 /* main.m in Sources */,

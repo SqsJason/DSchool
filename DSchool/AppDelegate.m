@@ -17,6 +17,7 @@
 #import "VCSHome.h"
 #import "VCDMessages.h"
 #import "VCDSettings.h"
+#import "MLBlackTransition.h"
 
 @interface AppDelegate ()
 
@@ -32,6 +33,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    [MLBlackTransition validatePanPackWithMLBlackTransitionGestureRecognizerType:MLBlackTransitionGestureRecognizerTypeScreenEdgePan];
     
     if (dicProfiles == nil) {
         dicProfiles = [[NSMutableDictionary alloc] init];
@@ -57,7 +60,7 @@
 
 #pragma mark - Methods
 
-- (RDVTabBarController *)setupViewControllers {
+- (void)setupViewControllers {
     UIViewController *firstViewController = [[VCDSignUp alloc] init];
     UIViewController *firstNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:firstViewController];
@@ -77,9 +80,10 @@
     RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
     [tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,
                                            thirdNavigationController,fourthNavigationController]];
-    [self customizeTabBarForController:tabBarController];
+   
+    self.baseController = tabBarController;
     
-    return tabBarController;
+    [self customizeTabBarForController:tabBarController];
 }
 
 - (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
@@ -231,9 +235,14 @@
         self.window.rootViewController = nil;
     }
 //    VCSHome *gotoHome              = [[VCSHome alloc] initWithNibName:@"VCSHome" bundle:nil];
-    RDVTabBarController *mainTab   = [self setupViewControllers];
-    UINavigationController *nav    = [[UINavigationController alloc] initWithRootViewController:mainTab];
-    self.window.rootViewController = nav;
+//    RDVTabBarController *mainTab   = [self setupViewControllers];
+//    UINavigationController *nav    = [[UINavigationController alloc] initWithRootViewController:mainTab];
+//    self.window.rootViewController = nav;
+//    [self customizeInterface];
+    
+    [self setupViewControllers];
+    [self.window setRootViewController:self.baseController];
+    [self.window makeKeyAndVisible];
 }
 
 #pragma mark - 显示登陆页 -
