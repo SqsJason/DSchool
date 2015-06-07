@@ -18,6 +18,7 @@
 #import "VCDMessages.h"
 #import "VCDSettings.h"
 #import "MLBlackTransition.h"
+#import "VCDHome.h"
 
 @interface AppDelegate ()
 
@@ -61,7 +62,7 @@
 #pragma mark - Methods
 
 - (void)setupViewControllers {
-    UIViewController *firstViewController = [[VCDSignUp alloc] init];
+    UIViewController *firstViewController = [[VCDHome alloc] init];
     UIViewController *firstNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     

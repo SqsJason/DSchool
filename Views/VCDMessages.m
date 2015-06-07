@@ -24,7 +24,7 @@
     
     self.title = @"消息";
     
-    arrMessagesList = [[NSMutableArray alloc] initWithObjects:@"One",@"Two",@"Three", nil];
+    arrMessagesList = [[NSMutableArray alloc] initWithObjects:@"One",@"Two",@"Three",@"One",@"Two",@"Three",@"One",@"Two",@"Three", nil];
 }
 
 #pragma mark - tableview deleagate datasource stuff
@@ -87,9 +87,14 @@
     }
     
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 @end

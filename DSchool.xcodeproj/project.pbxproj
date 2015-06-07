@@ -101,6 +101,10 @@
 		EFB2576D1B21FA8700E37F8D /* MLBlackTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB257681B21FA8700E37F8D /* MLBlackTransition.m */; };
 		EFB2576E1B21FA8700E37F8D /* MLTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2576A1B21FA8700E37F8D /* MLTransitionAnimation.m */; };
 		EFB2576F1B21FA8700E37F8D /* UIViewController+MLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2576C1B21FA8700E37F8D /* UIViewController+MLTransition.m */; };
+		EFB257741B220BDA00E37F8D /* VCDHome.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB257721B220BDA00E37F8D /* VCDHome.m */; };
+		EFB257751B220BDA00E37F8D /* VCDHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB257731B220BDA00E37F8D /* VCDHome.xib */; };
+		EFE6A82E1B230BA600C956FD /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE6A82C1B230BA600C956FD /* TableViewCell.m */; };
+		EFE6A82F1B230BA600C956FD /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE6A82D1B230BA600C956FD /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -274,6 +278,12 @@
 		EFB2576A1B21FA8700E37F8D /* MLTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTransitionAnimation.m; sourceTree = "<group>"; };
 		EFB2576B1B21FA8700E37F8D /* UIViewController+MLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MLTransition.h"; sourceTree = "<group>"; };
 		EFB2576C1B21FA8700E37F8D /* UIViewController+MLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MLTransition.m"; sourceTree = "<group>"; };
+		EFB257711B220BDA00E37F8D /* VCDHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDHome.h; sourceTree = "<group>"; };
+		EFB257721B220BDA00E37F8D /* VCDHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDHome.m; sourceTree = "<group>"; };
+		EFB257731B220BDA00E37F8D /* VCDHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDHome.xib; sourceTree = "<group>"; };
+		EFE6A82B1B230BA600C956FD /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		EFE6A82C1B230BA600C956FD /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		EFE6A82D1B230BA600C956FD /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -591,13 +601,12 @@
 		EF8BA2E61B1DDEE3008305A0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EFB257701B220BB400E37F8D /* Home */,
 				EF8BA3531B1DE643008305A0 /* Login */,
 				EF8BA35D1B1E0D05008305A0 /* SignUp */,
 				EF8BA3571B1DE6C8008305A0 /* Settings */,
 				EF8BA3561B1DE692008305A0 /* Discovery */,
 				EF8BA3551B1DE657008305A0 /* Message */,
-				EF8BA3541B1DE64C008305A0 /* Home */,
-				EF8BA3521B1DE627008305A0 /* FirstView */,
 				EF8BA2ED1B1DDEE3008305A0 /* LLHome */,
 			);
 			path = Views;
@@ -636,13 +645,6 @@
 			path = LLHome;
 			sourceTree = "<group>";
 		};
-		EF8BA3521B1DE627008305A0 /* FirstView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = FirstView;
-			sourceTree = "<group>";
-		};
 		EF8BA3531B1DE643008305A0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -651,13 +653,6 @@
 				EF8BA35A1B1DEDE5008305A0 /* VCDLogin.xib */,
 			);
 			name = Login;
-			sourceTree = "<group>";
-		};
-		EF8BA3541B1DE64C008305A0 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Home;
 			sourceTree = "<group>";
 		};
 		EF8BA3551B1DE657008305A0 /* Message */ = {
@@ -732,6 +727,27 @@
 				EFB2576C1B21FA8700E37F8D /* UIViewController+MLTransition.m */,
 			);
 			path = MLTransition;
+			sourceTree = "<group>";
+		};
+		EFB257701B220BB400E37F8D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EFE6A82A1B230B7300C956FD /* Cell */,
+				EFB257711B220BDA00E37F8D /* VCDHome.h */,
+				EFB257721B220BDA00E37F8D /* VCDHome.m */,
+				EFB257731B220BDA00E37F8D /* VCDHome.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		EFE6A82A1B230B7300C956FD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EFE6A82B1B230BA600C956FD /* TableViewCell.h */,
+				EFE6A82C1B230BA600C956FD /* TableViewCell.m */,
+				EFE6A82D1B230BA600C956FD /* TableViewCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -825,6 +841,7 @@
 				EF8BA3161B1DDEE3008305A0 /* password_icon@2x.png in Resources */,
 				EF8BA3151B1DDEE3008305A0 /* password_icon.png in Resources */,
 				EF8BA33F1B1DDEE3008305A0 /* VCSOrderDetail.xib in Resources */,
+				EFE6A82F1B230BA600C956FD /* TableViewCell.xib in Resources */,
 				EF8BA35C1B1DEDE5008305A0 /* VCDLogin.xib in Resources */,
 				EF8BA3191B1DDEE3008305A0 /* login_button.png in Resources */,
 				EF8BA3621B1E0D20008305A0 /* VCDSignUp.xib in Resources */,
@@ -834,6 +851,7 @@
 				EF8BA33D1B1DDEE3008305A0 /* VCSLogin.xib in Resources */,
 				EF8BA33B1B1DDEE3008305A0 /* VCSHome.xib in Resources */,
 				EF8BA3021B1DDEE3008305A0 /* Localizable.strings in Resources */,
+				EFB257751B220BDA00E37F8D /* VCDHome.xib in Resources */,
 				EF8BA26D1B1DDAE6008305A0 /* LaunchScreen.xib in Resources */,
 				EF8BA31C1B1DDEE3008305A0 /* EGOCache.podspec in Resources */,
 				EF8BA31D1B1DDEE3008305A0 /* LICENSE in Resources */,
@@ -916,10 +934,12 @@
 				EF8BA3341B1DDEE3008305A0 /* SlideImagesCell.m in Sources */,
 				EFB257581B2092C300E37F8D /* RDVTabBar.m in Sources */,
 				EF8BA30E1B1DDEE3008305A0 /* SVLoadImage.m in Sources */,
+				EFE6A82E1B230BA600C956FD /* TableViewCell.m in Sources */,
 				EF8BA3381B1DDEE3008305A0 /* VCSBrowserList.m in Sources */,
 				EF8BA3081B1DDEE3008305A0 /* ENGoods.m in Sources */,
 				EF8BA3331B1DDEE3008305A0 /* GoodsSketchCell.m in Sources */,
 				EF8BA35B1B1DEDE5008305A0 /* VCDLogin.m in Sources */,
+				EFB257741B220BDA00E37F8D /* VCDHome.m in Sources */,
 				EF8BA30B1B1DDEE3008305A0 /* StandarViewController.m in Sources */,
 				EFB257641B20C66100E37F8D /* CellMessage.m in Sources */,
 				EF8BA3251B1DDEE3008305A0 /* NSData+LRImageManagerAdditions.m in Sources */,

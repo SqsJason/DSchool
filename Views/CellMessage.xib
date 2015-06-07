@@ -54,6 +54,13 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="imvBudge" destination="Bzg-NH-EBJ" id="hNH-TZ-RYY"/>
+                <outlet property="imvHead" destination="End-nD-KKk" id="Xnk-4o-Dh4"/>
+                <outlet property="lblDateTime" destination="7EA-hl-ZY8" id="xGn-Zg-bU8"/>
+                <outlet property="lblMessage" destination="TUi-Na-13S" id="dUh-mt-dvq"/>
+                <outlet property="lblName" destination="BR4-q6-WSV" id="BzC-Wz-5WG"/>
+            </connections>
             <point key="canvasLocation" x="295" y="341.5"/>
         </tableViewCell>
     </objects>
