@@ -23,8 +23,6 @@
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil];
     [self.navigationController.navigationBar setTitleTextAttributes:attributes];
     
-    self.title = @"XXXX";
-    
     if (self.navigationController.viewControllers.count > 1) {
         if (isNotBackModel) {
             // set button back

@@ -15,6 +15,20 @@
 		444533B61B253E0400FC55DD /* VCDFriendsCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 444533B41B253E0400FC55DD /* VCDFriendsCircle.m */; };
 		444533B71B253E0400FC55DD /* VCDFriendsCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444533B51B253E0400FC55DD /* VCDFriendsCircle.xib */; };
 		B793CBD3576C610AF3D2F240 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4CF149F671061C5DB39CB /* libPods.a */; };
+		EF7561D51B25D248008F2343 /* VCDDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7561D31B25D248008F2343 /* VCDDiscovery.m */; };
+		EF7561D61B25D248008F2343 /* VCDDiscovery.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7561D41B25D248008F2343 /* VCDDiscovery.xib */; };
+		EF7561F41B25F38F008F2343 /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7561F31B25F38F008F2343 /* libiconv.2.4.0.dylib */; };
+		EF7561F61B25F399008F2343 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7561F51B25F399008F2343 /* OpenGLES.framework */; };
+		EF7561F81B25F3A0008F2343 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7561F71B25F3A0008F2343 /* MapKit.framework */; };
+		EF7561FA1B25F3A9008F2343 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7561F91B25F3A9008F2343 /* ImageIO.framework */; };
+		EF7561FC1B25F3B5008F2343 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7561FB1B25F3B5008F2343 /* QuartzCore.framework */; };
+		EF7561FE1B25F3BD008F2343 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7561FD1B25F3BD008F2343 /* MessageUI.framework */; };
+		EF7562001B25F3CA008F2343 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7561FF1B25F3CA008F2343 /* libsqlite3.dylib */; };
+		EF7562021B25F3E0008F2343 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7562011B25F3E0008F2343 /* libstdc++.dylib */; };
+		EF7562041B25F3EA008F2343 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7562031B25F3EA008F2343 /* libz.1.2.5.dylib */; };
+		EF7562061B25F3FB008F2343 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7562051B25F3FB008F2343 /* libicucore.dylib */; };
+		EF7562081B25F404008F2343 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7562071B25F404008F2343 /* libsqlite3.0.dylib */; };
+		EF75620C1B25F737008F2343 /* JXBAdPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75620B1B25F737008F2343 /* JXBAdPageView.m */; };
 		EF8BA25F1B1DDAE6008305A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA25E1B1DDAE6008305A0 /* main.m */; };
 		EF8BA2621B1DDAE6008305A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA2611B1DDAE6008305A0 /* AppDelegate.m */; };
 		EF8BA2651B1DDAE6008305A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA2641B1DDAE6008305A0 /* ViewController.m */; };
@@ -139,6 +153,22 @@
 		444533B51B253E0400FC55DD /* VCDFriendsCircle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDFriendsCircle.xib; sourceTree = "<group>"; };
 		7C74BBF01CB7642E1331C7BD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9C37D92A1EA8A9F7B9147B58 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EF7561D21B25D248008F2343 /* VCDDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDDiscovery.h; sourceTree = "<group>"; };
+		EF7561D31B25D248008F2343 /* VCDDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDDiscovery.m; sourceTree = "<group>"; };
+		EF7561D41B25D248008F2343 /* VCDDiscovery.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDDiscovery.xib; sourceTree = "<group>"; };
+		EF7561F31B25F38F008F2343 /* libiconv.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.4.0.dylib; path = usr/lib/libiconv.2.4.0.dylib; sourceTree = SDKROOT; };
+		EF7561F51B25F399008F2343 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EF7561F71B25F3A0008F2343 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EF7561F91B25F3A9008F2343 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		EF7561FB1B25F3B5008F2343 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EF7561FD1B25F3BD008F2343 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EF7561FF1B25F3CA008F2343 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EF7562011B25F3E0008F2343 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		EF7562031B25F3EA008F2343 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		EF7562051B25F3FB008F2343 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		EF7562071B25F404008F2343 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		EF75620A1B25F737008F2343 /* JXBAdPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXBAdPageView.h; sourceTree = "<group>"; };
+		EF75620B1B25F737008F2343 /* JXBAdPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXBAdPageView.m; sourceTree = "<group>"; };
 		EF8BA2591B1DDAE6008305A0 /* DSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8BA25D1B1DDAE6008305A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF8BA25E1B1DDAE6008305A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -309,6 +339,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7562081B25F404008F2343 /* libsqlite3.0.dylib in Frameworks */,
+				EF7562061B25F3FB008F2343 /* libicucore.dylib in Frameworks */,
+				EF7562041B25F3EA008F2343 /* libz.1.2.5.dylib in Frameworks */,
+				EF7562021B25F3E0008F2343 /* libstdc++.dylib in Frameworks */,
+				EF8BA3411B1DDF9A008305A0 /* libz.dylib in Frameworks */,
+				EF7562001B25F3CA008F2343 /* libsqlite3.dylib in Frameworks */,
+				EF7561FE1B25F3BD008F2343 /* MessageUI.framework in Frameworks */,
+				EF7561FC1B25F3B5008F2343 /* QuartzCore.framework in Frameworks */,
+				EF7561FA1B25F3A9008F2343 /* ImageIO.framework in Frameworks */,
+				EF7561F81B25F3A0008F2343 /* MapKit.framework in Frameworks */,
+				EF7561F61B25F399008F2343 /* OpenGLES.framework in Frameworks */,
+				EF7561F41B25F38F008F2343 /* libiconv.2.4.0.dylib in Frameworks */,
 				EF8BA3511B1DE5DC008305A0 /* CoreGraphics.framework in Frameworks */,
 				EF8BA34F1B1DE5D0008305A0 /* MobileCoreServices.framework in Frameworks */,
 				EF8BA34D1B1DE5CB008305A0 /* Security.framework in Frameworks */,
@@ -317,7 +359,6 @@
 				EF8BA3471B1DDFBA008305A0 /* SystemConfiguration.framework in Frameworks */,
 				EF8BA3451B1DDFAC008305A0 /* CFNetwork.framework in Frameworks */,
 				EF8BA3431B1DDFA0008305A0 /* UIKit.framework in Frameworks */,
-				EF8BA3411B1DDF9A008305A0 /* libz.dylib in Frameworks */,
 				B793CBD3576C610AF3D2F240 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +376,17 @@
 		04C43EF7929A27AF7DAD3619 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF7562071B25F404008F2343 /* libsqlite3.0.dylib */,
+				EF7562051B25F3FB008F2343 /* libicucore.dylib */,
+				EF7562031B25F3EA008F2343 /* libz.1.2.5.dylib */,
+				EF7562011B25F3E0008F2343 /* libstdc++.dylib */,
+				EF7561FF1B25F3CA008F2343 /* libsqlite3.dylib */,
+				EF7561FD1B25F3BD008F2343 /* MessageUI.framework */,
+				EF7561FB1B25F3B5008F2343 /* QuartzCore.framework */,
+				EF7561F91B25F3A9008F2343 /* ImageIO.framework */,
+				EF7561F71B25F3A0008F2343 /* MapKit.framework */,
+				EF7561F51B25F399008F2343 /* OpenGLES.framework */,
+				EF7561F31B25F38F008F2343 /* libiconv.2.4.0.dylib */,
 				EF8BA3501B1DE5DC008305A0 /* CoreGraphics.framework */,
 				EF8BA34E1B1DE5D0008305A0 /* MobileCoreServices.framework */,
 				EF8BA34C1B1DE5CB008305A0 /* Security.framework */,
@@ -373,9 +425,26 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		EF7561D71B25F242008F2343 /* ToolKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ToolKit;
+			sourceTree = "<group>";
+		};
+		EF7562091B25F737008F2343 /* JXBAdPageView */ = {
+			isa = PBXGroup;
+			children = (
+				EF75620A1B25F737008F2343 /* JXBAdPageView.h */,
+				EF75620B1B25F737008F2343 /* JXBAdPageView.m */,
+			);
+			path = JXBAdPageView;
+			sourceTree = "<group>";
+		};
 		EF8BA2501B1DDAE6008305A0 = {
 			isa = PBXGroup;
 			children = (
+				EF7561D71B25F242008F2343 /* ToolKit */,
 				EF8BA2821B1DDEE3008305A0 /* Configuration */,
 				EF8BA2881B1DDEE3008305A0 /* Entity */,
 				EF8BA2971B1DDEE3008305A0 /* Helper */,
@@ -504,6 +573,7 @@
 		EF8BA2A71B1DDEE3008305A0 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				EF7562091B25F737008F2343 /* JXBAdPageView */,
 				444533A51B253A3800FC55DD /* List */,
 				EFB257661B21FA8700E37F8D /* MLTransition */,
 				EFB257511B2092C300E37F8D /* RDVTabBarController */,
@@ -706,6 +776,9 @@
 				444533B31B253E0400FC55DD /* VCDFriendsCircle.h */,
 				444533B41B253E0400FC55DD /* VCDFriendsCircle.m */,
 				444533B51B253E0400FC55DD /* VCDFriendsCircle.xib */,
+				EF7561D21B25D248008F2343 /* VCDDiscovery.h */,
+				EF7561D31B25D248008F2343 /* VCDDiscovery.m */,
+				EF7561D41B25D248008F2343 /* VCDDiscovery.xib */,
 			);
 			name = Discovery;
 			sourceTree = "<group>";
@@ -888,6 +961,7 @@
 				EF8BA3111B1DDEE3008305A0 /* round_textfield.png in Resources */,
 				EF8BA2681B1DDAE6008305A0 /* Main.storyboard in Resources */,
 				EF8BA33D1B1DDEE3008305A0 /* VCSLogin.xib in Resources */,
+				EF7561D61B25D248008F2343 /* VCDDiscovery.xib in Resources */,
 				444533B71B253E0400FC55DD /* VCDFriendsCircle.xib in Resources */,
 				EF8BA33B1B1DDEE3008305A0 /* VCSHome.xib in Resources */,
 				EF8BA3021B1DDEE3008305A0 /* Localizable.strings in Resources */,
@@ -974,6 +1048,7 @@
 				444533B11B253A3800FC55DD /* ZZListTableController.m in Sources */,
 				EF8BA3661B1E1EF0008305A0 /* VCDSettings.m in Sources */,
 				EF8BA32F1B1DDEE3008305A0 /* BrowserListCell.m in Sources */,
+				EF75620C1B25F737008F2343 /* JXBAdPageView.m in Sources */,
 				EF8BA3341B1DDEE3008305A0 /* SlideImagesCell.m in Sources */,
 				EFB257581B2092C300E37F8D /* RDVTabBar.m in Sources */,
 				EF8BA30E1B1DDEE3008305A0 /* SVLoadImage.m in Sources */,
@@ -1012,6 +1087,7 @@
 				EF8BA30A1B1DDEE3008305A0 /* Sessions.m in Sources */,
 				EF8BA33A1B1DDEE3008305A0 /* VCSHome.m in Sources */,
 				EF8BA33C1B1DDEE3008305A0 /* VCSLogin.m in Sources */,
+				EF7561D51B25D248008F2343 /* VCDDiscovery.m in Sources */,
 				EF8BA3061B1DDEE3008305A0 /* ENGooAttriItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

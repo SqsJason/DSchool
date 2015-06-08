@@ -20,6 +20,7 @@
 #import "MLBlackTransition.h"
 #import "VCDHome.h"
 #import "VCDFriendsCircle.h"
+#import "VCDDiscovery.h"
 
 @interface AppDelegate ()
 
@@ -71,7 +72,7 @@
     UIViewController *secondNavigationController = [[UINavigationController alloc]
                                                     initWithRootViewController:secondViewController];
     
-    UIViewController *thirdViewController = [[VCDFriendsCircle alloc] init];
+    UIViewController *thirdViewController = [[VCDDiscovery alloc] init];
     UIViewController *thirdNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:thirdViewController];
     
