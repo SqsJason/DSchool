@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		444533AE1B253A3800FC55DD /* YTListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 444533A71B253A3800FC55DD /* YTListCell.m */; };
+		444533AF1B253A3800FC55DD /* YTListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444533A81B253A3800FC55DD /* YTListCell.xib */; };
+		444533B01B253A3800FC55DD /* ZZImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 444533AA1B253A3800FC55DD /* ZZImagesView.m */; };
+		444533B11B253A3800FC55DD /* ZZListTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444533AC1B253A3800FC55DD /* ZZListTableController.m */; };
+		444533B21B253A3800FC55DD /* ZZListTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444533AD1B253A3800FC55DD /* ZZListTableController.xib */; };
+		444533B61B253E0400FC55DD /* VCDFriendsCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 444533B41B253E0400FC55DD /* VCDFriendsCircle.m */; };
+		444533B71B253E0400FC55DD /* VCDFriendsCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444533B51B253E0400FC55DD /* VCDFriendsCircle.xib */; };
 		B793CBD3576C610AF3D2F240 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4CF149F671061C5DB39CB /* libPods.a */; };
 		EF8BA25F1B1DDAE6008305A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA25E1B1DDAE6008305A0 /* main.m */; };
 		EF8BA2621B1DDAE6008305A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA2611B1DDAE6008305A0 /* AppDelegate.m */; };
@@ -119,6 +126,17 @@
 
 /* Begin PBXFileReference section */
 		0EC4CF149F671061C5DB39CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		444533A61B253A3800FC55DD /* YTListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTListCell.h; sourceTree = "<group>"; };
+		444533A71B253A3800FC55DD /* YTListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTListCell.m; sourceTree = "<group>"; };
+		444533A81B253A3800FC55DD /* YTListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTListCell.xib; sourceTree = "<group>"; };
+		444533A91B253A3800FC55DD /* ZZImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImagesView.h; sourceTree = "<group>"; };
+		444533AA1B253A3800FC55DD /* ZZImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImagesView.m; sourceTree = "<group>"; };
+		444533AB1B253A3800FC55DD /* ZZListTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZListTableController.h; sourceTree = "<group>"; };
+		444533AC1B253A3800FC55DD /* ZZListTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZListTableController.m; sourceTree = "<group>"; };
+		444533AD1B253A3800FC55DD /* ZZListTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZListTableController.xib; sourceTree = "<group>"; };
+		444533B31B253E0400FC55DD /* VCDFriendsCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDFriendsCircle.h; sourceTree = "<group>"; };
+		444533B41B253E0400FC55DD /* VCDFriendsCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDFriendsCircle.m; sourceTree = "<group>"; };
+		444533B51B253E0400FC55DD /* VCDFriendsCircle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDFriendsCircle.xib; sourceTree = "<group>"; };
 		7C74BBF01CB7642E1331C7BD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9C37D92A1EA8A9F7B9147B58 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EF8BA2591B1DDAE6008305A0 /* DSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -340,6 +358,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		444533A51B253A3800FC55DD /* List */ = {
+			isa = PBXGroup;
+			children = (
+				444533A61B253A3800FC55DD /* YTListCell.h */,
+				444533A71B253A3800FC55DD /* YTListCell.m */,
+				444533A81B253A3800FC55DD /* YTListCell.xib */,
+				444533A91B253A3800FC55DD /* ZZImagesView.h */,
+				444533AA1B253A3800FC55DD /* ZZImagesView.m */,
+				444533AB1B253A3800FC55DD /* ZZListTableController.h */,
+				444533AC1B253A3800FC55DD /* ZZListTableController.m */,
+				444533AD1B253A3800FC55DD /* ZZListTableController.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		EF8BA2501B1DDAE6008305A0 = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +504,7 @@
 		EF8BA2A71B1DDEE3008305A0 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				444533A51B253A3800FC55DD /* List */,
 				EFB257661B21FA8700E37F8D /* MLTransition */,
 				EFB257511B2092C300E37F8D /* RDVTabBarController */,
 				EF8BA2E11B1DDEE3008305A0 /* SHXMLParser */,
@@ -669,6 +703,9 @@
 		EF8BA3561B1DE692008305A0 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				444533B31B253E0400FC55DD /* VCDFriendsCircle.h */,
+				444533B41B253E0400FC55DD /* VCDFriendsCircle.m */,
+				444533B51B253E0400FC55DD /* VCDFriendsCircle.xib */,
 			);
 			name = Discovery;
 			sourceTree = "<group>";
@@ -839,7 +876,9 @@
 				EF8BA3171B1DDEE3008305A0 /* user_name_icon.png in Resources */,
 				EF8BA3671B1E1EF0008305A0 /* VCDSettings.xib in Resources */,
 				EF8BA3161B1DDEE3008305A0 /* password_icon@2x.png in Resources */,
+				444533B21B253A3800FC55DD /* ZZListTableController.xib in Resources */,
 				EF8BA3151B1DDEE3008305A0 /* password_icon.png in Resources */,
+				444533AF1B253A3800FC55DD /* YTListCell.xib in Resources */,
 				EF8BA33F1B1DDEE3008305A0 /* VCSOrderDetail.xib in Resources */,
 				EFE6A82F1B230BA600C956FD /* TableViewCell.xib in Resources */,
 				EF8BA35C1B1DEDE5008305A0 /* VCDLogin.xib in Resources */,
@@ -849,6 +888,7 @@
 				EF8BA3111B1DDEE3008305A0 /* round_textfield.png in Resources */,
 				EF8BA2681B1DDAE6008305A0 /* Main.storyboard in Resources */,
 				EF8BA33D1B1DDEE3008305A0 /* VCSLogin.xib in Resources */,
+				444533B71B253E0400FC55DD /* VCDFriendsCircle.xib in Resources */,
 				EF8BA33B1B1DDEE3008305A0 /* VCSHome.xib in Resources */,
 				EF8BA3021B1DDEE3008305A0 /* Localizable.strings in Resources */,
 				EFB257751B220BDA00E37F8D /* VCDHome.xib in Resources */,
@@ -925,10 +965,13 @@
 				EF8BA31F1B1DDEE3008305A0 /* FloatView.m in Sources */,
 				EF8BA3071B1DDEE3008305A0 /* ENGooCategory.m in Sources */,
 				EF8BA3241B1DDEE3008305A0 /* LRImagePresenter.m in Sources */,
+				444533B01B253A3800FC55DD /* ZZImagesView.m in Sources */,
 				EF8BA32E1B1DDEE3008305A0 /* TKRoundedView.m in Sources */,
 				EF8BA3611B1E0D20008305A0 /* VCDSignUp.m in Sources */,
+				444533B61B253E0400FC55DD /* VCDFriendsCircle.m in Sources */,
 				EF8BA3261B1DDEE3008305A0 /* UIImage+LRImageManagerAdditions.m in Sources */,
 				EF8BA31E1B1DDEE3008305A0 /* README.mdown in Sources */,
+				444533B11B253A3800FC55DD /* ZZListTableController.m in Sources */,
 				EF8BA3661B1E1EF0008305A0 /* VCDSettings.m in Sources */,
 				EF8BA32F1B1DDEE3008305A0 /* BrowserListCell.m in Sources */,
 				EF8BA3341B1DDEE3008305A0 /* SlideImagesCell.m in Sources */,
@@ -949,6 +992,7 @@
 				EF8BA3361B1DDEE3008305A0 /* VCSAlarmDetail.m in Sources */,
 				EFB257591B2092C300E37F8D /* RDVTabBarController.m in Sources */,
 				EF8BA30F1B1DDEE3008305A0 /* SVLogin.m in Sources */,
+				444533AE1B253A3800FC55DD /* YTListCell.m in Sources */,
 				EF8BA3271B1DDEE3008305A0 /* UIImageView+LRNetworking.m in Sources */,
 				EF8BA3231B1DDEE3008305A0 /* LRImageOperation.m in Sources */,
 				EF8BA3311B1DDEE3008305A0 /* CellHome.m in Sources */,
