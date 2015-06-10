@@ -97,7 +97,6 @@ static const float IMV_TIME_H         = 20.0;
     
     
     //
-    content.backgroundColor = [UIColor orangeColor];
     content.lineBreakMode = NSLineBreakByWordWrapping;
     content.numberOfLines = 0;
     content.font = [self.class fontOfContent];

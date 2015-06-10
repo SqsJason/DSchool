@@ -37,11 +37,8 @@
             entity.inCount = @"10";
             entity.outCount = @"20";
             entity.name = @"黄伟华测试";
-            entity.content = @"I’m telling you that if you can read this article, look through this list and not claim it as your own, then you should be a little worried.\
-            \
-            Actually, you should be very worried. You should drop everything and immediately  question your existence on earth. You should find a mirror, look yourself in the eyes, raise your hand and slap yourself in the face.\
-            Got it? Now repeat that until you come to your senses and continue reading whenever you’re ready.";
-            entity.images = @[@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image"];
+            entity.content = @"I’m telling you that if you can read this article, look through this list and not claim it as your own, then you should be a little worried.Actually, you should be very worried. You should drop everything and immediately  question your existence on earth. You should find a mirror, look yourself in the eyes, raise your hand and slap yourself in the face.Got it? Now repeat that until you come to your senses and continue reading whenever you’re ready.";
+            entity.images = @[@"test_icon_image"];
             entity.date = @"1分钟前";
             entity.state = @"1";
             entity.wantCount = @"007";
