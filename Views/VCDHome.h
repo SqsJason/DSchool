@@ -8,7 +8,7 @@
 
 #import "StandarViewController.h"
 
-@interface VCDHome : StandarViewController
+@interface VCDHome : StandarViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic, strong) IBOutlet UISegmentedControl *segmentedControl;
 

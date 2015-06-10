@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		444533AE1B253A3800FC55DD /* YTListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 444533A71B253A3800FC55DD /* YTListCell.m */; };
-		444533AF1B253A3800FC55DD /* YTListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444533A81B253A3800FC55DD /* YTListCell.xib */; };
 		444533B01B253A3800FC55DD /* ZZImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 444533AA1B253A3800FC55DD /* ZZImagesView.m */; };
-		444533B11B253A3800FC55DD /* ZZListTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444533AC1B253A3800FC55DD /* ZZListTableController.m */; };
-		444533B21B253A3800FC55DD /* ZZListTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444533AD1B253A3800FC55DD /* ZZListTableController.xib */; };
 		444533B61B253E0400FC55DD /* VCDFriendsCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 444533B41B253E0400FC55DD /* VCDFriendsCircle.m */; };
 		444533B71B253E0400FC55DD /* VCDFriendsCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444533B51B253E0400FC55DD /* VCDFriendsCircle.xib */; };
 		B793CBD3576C610AF3D2F240 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4CF149F671061C5DB39CB /* libPods.a */; };
@@ -29,6 +25,10 @@
 		EF7562061B25F3FB008F2343 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7562051B25F3FB008F2343 /* libicucore.dylib */; };
 		EF7562081B25F404008F2343 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7562071B25F404008F2343 /* libsqlite3.0.dylib */; };
 		EF75620C1B25F737008F2343 /* JXBAdPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75620B1B25F737008F2343 /* JXBAdPageView.m */; };
+		EF75620F1B272821008F2343 /* VCDDiscoveryNew.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75620E1B272821008F2343 /* VCDDiscoveryNew.m */; };
+		EF7562151B272999008F2343 /* SVPullToRefreshView+OY_PullRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7562121B272999008F2343 /* SVPullToRefreshView+OY_PullRefreshView.m */; };
+		EF75623B1B274E3E008F2343 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7562281B274E3E008F2343 /* NSString+Size.m */; };
+		EF7562461B274EA5008F2343 /* CellFriendsCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7562451B274EA5008F2343 /* CellFriendsCircle.m */; };
 		EF8BA25F1B1DDAE6008305A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA25E1B1DDAE6008305A0 /* main.m */; };
 		EF8BA2621B1DDAE6008305A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA2611B1DDAE6008305A0 /* AppDelegate.m */; };
 		EF8BA2651B1DDAE6008305A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA2641B1DDAE6008305A0 /* ViewController.m */; };
@@ -124,8 +124,8 @@
 		EFB2576F1B21FA8700E37F8D /* UIViewController+MLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB2576C1B21FA8700E37F8D /* UIViewController+MLTransition.m */; };
 		EFB257741B220BDA00E37F8D /* VCDHome.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB257721B220BDA00E37F8D /* VCDHome.m */; };
 		EFB257751B220BDA00E37F8D /* VCDHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB257731B220BDA00E37F8D /* VCDHome.xib */; };
-		EFE6A82E1B230BA600C956FD /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE6A82C1B230BA600C956FD /* TableViewCell.m */; };
-		EFE6A82F1B230BA600C956FD /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE6A82D1B230BA600C956FD /* TableViewCell.xib */; };
+		EFE6A82E1B230BA600C956FD /* CellHomeDD.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE6A82C1B230BA600C956FD /* CellHomeDD.m */; };
+		EFE6A82F1B230BA600C956FD /* CellHomeDD.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE6A82D1B230BA600C956FD /* CellHomeDD.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,14 +140,8 @@
 
 /* Begin PBXFileReference section */
 		0EC4CF149F671061C5DB39CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		444533A61B253A3800FC55DD /* YTListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTListCell.h; sourceTree = "<group>"; };
-		444533A71B253A3800FC55DD /* YTListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTListCell.m; sourceTree = "<group>"; };
-		444533A81B253A3800FC55DD /* YTListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTListCell.xib; sourceTree = "<group>"; };
 		444533A91B253A3800FC55DD /* ZZImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImagesView.h; sourceTree = "<group>"; };
 		444533AA1B253A3800FC55DD /* ZZImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImagesView.m; sourceTree = "<group>"; };
-		444533AB1B253A3800FC55DD /* ZZListTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZListTableController.h; sourceTree = "<group>"; };
-		444533AC1B253A3800FC55DD /* ZZListTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZListTableController.m; sourceTree = "<group>"; };
-		444533AD1B253A3800FC55DD /* ZZListTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZListTableController.xib; sourceTree = "<group>"; };
 		444533B31B253E0400FC55DD /* VCDFriendsCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDFriendsCircle.h; sourceTree = "<group>"; };
 		444533B41B253E0400FC55DD /* VCDFriendsCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDFriendsCircle.m; sourceTree = "<group>"; };
 		444533B51B253E0400FC55DD /* VCDFriendsCircle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDFriendsCircle.xib; sourceTree = "<group>"; };
@@ -169,6 +163,14 @@
 		EF7562071B25F404008F2343 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		EF75620A1B25F737008F2343 /* JXBAdPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXBAdPageView.h; sourceTree = "<group>"; };
 		EF75620B1B25F737008F2343 /* JXBAdPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXBAdPageView.m; sourceTree = "<group>"; };
+		EF75620D1B272821008F2343 /* VCDDiscoveryNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDDiscoveryNew.h; sourceTree = "<group>"; };
+		EF75620E1B272821008F2343 /* VCDDiscoveryNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDDiscoveryNew.m; sourceTree = "<group>"; };
+		EF7562111B272999008F2343 /* SVPullToRefreshView+OY_PullRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVPullToRefreshView+OY_PullRefreshView.h"; sourceTree = "<group>"; };
+		EF7562121B272999008F2343 /* SVPullToRefreshView+OY_PullRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVPullToRefreshView+OY_PullRefreshView.m"; sourceTree = "<group>"; };
+		EF7562271B274E3E008F2343 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		EF7562281B274E3E008F2343 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		EF7562441B274EA5008F2343 /* CellFriendsCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFriendsCircle.h; sourceTree = "<group>"; };
+		EF7562451B274EA5008F2343 /* CellFriendsCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFriendsCircle.m; sourceTree = "<group>"; };
 		EF8BA2591B1DDAE6008305A0 /* DSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8BA25D1B1DDAE6008305A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF8BA25E1B1DDAE6008305A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -329,9 +331,9 @@
 		EFB257711B220BDA00E37F8D /* VCDHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDHome.h; sourceTree = "<group>"; };
 		EFB257721B220BDA00E37F8D /* VCDHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDHome.m; sourceTree = "<group>"; };
 		EFB257731B220BDA00E37F8D /* VCDHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDHome.xib; sourceTree = "<group>"; };
-		EFE6A82B1B230BA600C956FD /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
-		EFE6A82C1B230BA600C956FD /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		EFE6A82D1B230BA600C956FD /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EFE6A82B1B230BA600C956FD /* CellHomeDD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHomeDD.h; sourceTree = "<group>"; };
+		EFE6A82C1B230BA600C956FD /* CellHomeDD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellHomeDD.m; sourceTree = "<group>"; };
+		EFE6A82D1B230BA600C956FD /* CellHomeDD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellHomeDD.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,14 +415,8 @@
 		444533A51B253A3800FC55DD /* List */ = {
 			isa = PBXGroup;
 			children = (
-				444533A61B253A3800FC55DD /* YTListCell.h */,
-				444533A71B253A3800FC55DD /* YTListCell.m */,
-				444533A81B253A3800FC55DD /* YTListCell.xib */,
 				444533A91B253A3800FC55DD /* ZZImagesView.h */,
 				444533AA1B253A3800FC55DD /* ZZImagesView.m */,
-				444533AB1B253A3800FC55DD /* ZZListTableController.h */,
-				444533AC1B253A3800FC55DD /* ZZListTableController.m */,
-				444533AD1B253A3800FC55DD /* ZZListTableController.xib */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -428,6 +424,8 @@
 		EF7561D71B25F242008F2343 /* ToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				EF7562241B274E3E008F2343 /* XBCategory */,
+				EF7562101B272999008F2343 /* Category */,
 			);
 			path = ToolKit;
 			sourceTree = "<group>";
@@ -439,6 +437,33 @@
 				EF75620B1B25F737008F2343 /* JXBAdPageView.m */,
 			);
 			path = JXBAdPageView;
+			sourceTree = "<group>";
+		};
+		EF7562101B272999008F2343 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EF7562111B272999008F2343 /* SVPullToRefreshView+OY_PullRefreshView.h */,
+				EF7562121B272999008F2343 /* SVPullToRefreshView+OY_PullRefreshView.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EF7562231B274DAD008F2343 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF7562441B274EA5008F2343 /* CellFriendsCircle.h */,
+				EF7562451B274EA5008F2343 /* CellFriendsCircle.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		EF7562241B274E3E008F2343 /* XBCategory */ = {
+			isa = PBXGroup;
+			children = (
+				EF7562271B274E3E008F2343 /* NSString+Size.h */,
+				EF7562281B274E3E008F2343 /* NSString+Size.m */,
+			);
+			path = XBCategory;
 			sourceTree = "<group>";
 		};
 		EF8BA2501B1DDAE6008305A0 = {
@@ -773,12 +798,15 @@
 		EF8BA3561B1DE692008305A0 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				EF7562231B274DAD008F2343 /* Cell */,
 				444533B31B253E0400FC55DD /* VCDFriendsCircle.h */,
 				444533B41B253E0400FC55DD /* VCDFriendsCircle.m */,
 				444533B51B253E0400FC55DD /* VCDFriendsCircle.xib */,
 				EF7561D21B25D248008F2343 /* VCDDiscovery.h */,
 				EF7561D31B25D248008F2343 /* VCDDiscovery.m */,
 				EF7561D41B25D248008F2343 /* VCDDiscovery.xib */,
+				EF75620D1B272821008F2343 /* VCDDiscoveryNew.h */,
+				EF75620E1B272821008F2343 /* VCDDiscoveryNew.m */,
 			);
 			name = Discovery;
 			sourceTree = "<group>";
@@ -853,9 +881,9 @@
 		EFE6A82A1B230B7300C956FD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				EFE6A82B1B230BA600C956FD /* TableViewCell.h */,
-				EFE6A82C1B230BA600C956FD /* TableViewCell.m */,
-				EFE6A82D1B230BA600C956FD /* TableViewCell.xib */,
+				EFE6A82B1B230BA600C956FD /* CellHomeDD.h */,
+				EFE6A82C1B230BA600C956FD /* CellHomeDD.m */,
+				EFE6A82D1B230BA600C956FD /* CellHomeDD.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -949,11 +977,9 @@
 				EF8BA3171B1DDEE3008305A0 /* user_name_icon.png in Resources */,
 				EF8BA3671B1E1EF0008305A0 /* VCDSettings.xib in Resources */,
 				EF8BA3161B1DDEE3008305A0 /* password_icon@2x.png in Resources */,
-				444533B21B253A3800FC55DD /* ZZListTableController.xib in Resources */,
 				EF8BA3151B1DDEE3008305A0 /* password_icon.png in Resources */,
-				444533AF1B253A3800FC55DD /* YTListCell.xib in Resources */,
 				EF8BA33F1B1DDEE3008305A0 /* VCSOrderDetail.xib in Resources */,
-				EFE6A82F1B230BA600C956FD /* TableViewCell.xib in Resources */,
+				EFE6A82F1B230BA600C956FD /* CellHomeDD.xib in Resources */,
 				EF8BA35C1B1DEDE5008305A0 /* VCDLogin.xib in Resources */,
 				EF8BA3191B1DDEE3008305A0 /* login_button.png in Resources */,
 				EF8BA3621B1E0D20008305A0 /* VCDSignUp.xib in Resources */,
@@ -1044,15 +1070,16 @@
 				EF8BA3611B1E0D20008305A0 /* VCDSignUp.m in Sources */,
 				444533B61B253E0400FC55DD /* VCDFriendsCircle.m in Sources */,
 				EF8BA3261B1DDEE3008305A0 /* UIImage+LRImageManagerAdditions.m in Sources */,
+				EF75620F1B272821008F2343 /* VCDDiscoveryNew.m in Sources */,
 				EF8BA31E1B1DDEE3008305A0 /* README.mdown in Sources */,
-				444533B11B253A3800FC55DD /* ZZListTableController.m in Sources */,
 				EF8BA3661B1E1EF0008305A0 /* VCDSettings.m in Sources */,
 				EF8BA32F1B1DDEE3008305A0 /* BrowserListCell.m in Sources */,
 				EF75620C1B25F737008F2343 /* JXBAdPageView.m in Sources */,
 				EF8BA3341B1DDEE3008305A0 /* SlideImagesCell.m in Sources */,
 				EFB257581B2092C300E37F8D /* RDVTabBar.m in Sources */,
 				EF8BA30E1B1DDEE3008305A0 /* SVLoadImage.m in Sources */,
-				EFE6A82E1B230BA600C956FD /* TableViewCell.m in Sources */,
+				EFE6A82E1B230BA600C956FD /* CellHomeDD.m in Sources */,
+				EF7562461B274EA5008F2343 /* CellFriendsCircle.m in Sources */,
 				EF8BA3381B1DDEE3008305A0 /* VCSBrowserList.m in Sources */,
 				EF8BA3081B1DDEE3008305A0 /* ENGoods.m in Sources */,
 				EF8BA3331B1DDEE3008305A0 /* GoodsSketchCell.m in Sources */,
@@ -1067,12 +1094,12 @@
 				EF8BA3361B1DDEE3008305A0 /* VCSAlarmDetail.m in Sources */,
 				EFB257591B2092C300E37F8D /* RDVTabBarController.m in Sources */,
 				EF8BA30F1B1DDEE3008305A0 /* SVLogin.m in Sources */,
-				444533AE1B253A3800FC55DD /* YTListCell.m in Sources */,
 				EF8BA3271B1DDEE3008305A0 /* UIImageView+LRNetworking.m in Sources */,
 				EF8BA3231B1DDEE3008305A0 /* LRImageOperation.m in Sources */,
 				EF8BA3311B1DDEE3008305A0 /* CellHome.m in Sources */,
 				EF8BA2651B1DDAE6008305A0 /* ViewController.m in Sources */,
 				EF8BA2621B1DDAE6008305A0 /* AppDelegate.m in Sources */,
+				EF7562151B272999008F2343 /* SVPullToRefreshView+OY_PullRefreshView.m in Sources */,
 				EF8BA3291B1DDEE3008305A0 /* FGalleryPhoto.m in Sources */,
 				EF8BA3281B1DDEE3008305A0 /* OLGhostAlertView.m in Sources */,
 				EF8BA3091B1DDEE3008305A0 /* ENOrder.m in Sources */,
@@ -1082,6 +1109,7 @@
 				EF8BA32D1B1DDEE3008305A0 /* SHXMLParser.m in Sources */,
 				EFB2576E1B21FA8700E37F8D /* MLTransitionAnimation.m in Sources */,
 				EF8BA3031B1DDEE3008305A0 /* ENBrand.m in Sources */,
+				EF75623B1B274E3E008F2343 /* NSString+Size.m in Sources */,
 				EF8BA30D1B1DDEE3008305A0 /* SVGetOrderList.m in Sources */,
 				EF8BA25F1B1DDAE6008305A0 /* main.m in Sources */,
 				EF8BA30A1B1DDEE3008305A0 /* Sessions.m in Sources */,

@@ -44,10 +44,6 @@
     wantCount.text = [NSString stringWithFormat:@"%@个小伙伴想要",entity.wantCount];
     state.image = nil;
     
-    
-    
-    
-    
     //big image frame
     if (!entity.images)
     {

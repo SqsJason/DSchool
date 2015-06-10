@@ -8,6 +8,7 @@
 
 #import "VCDDiscovery.h"
 #import "JXBAdPageView.h"
+#import "VCDFriendsCircle.h"
 
 static float const H_ADVIEW_HEIGHT           = 160;
 static float const H_LIFEVIEW_HEIGHT         = 100;
@@ -111,6 +112,9 @@ static float const H_BTNVIEWPADDING_TOP      = 10;
 
 - (void)initBtnViews
 {
+    UITapGestureRecognizer *tapAction = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(gotoFriendsCircle)];
+    [_vLifeService addGestureRecognizer:tapAction];
+    
     CGRect frameLife = _vLifeService.frame;
     _vLifeService.frame = CGRectMake(H_BTNVIEWPADDING_LEFT, frameLife.origin.y, SCREEN_WIDTH_PORTRAIT - 2*H_BTNVIEWPADDING_LEFT,  frameLife.size.height);
     
@@ -132,6 +136,13 @@ static float const H_BTNVIEWPADDING_TOP      = 10;
     
     CGRect frameCanteen = _vCanteen.frame;
     _vCanteen.frame = CGRectMake(H_BTNVIEWPADDING_LEFT, frameCanteen.origin.y, (SCREEN_WIDTH_PORTRAIT - 40)/2, frameCanteen.size.height);
+}
+
+- (void) gotoFriendsCircle
+{
+    VCDFriendsCircle *vcdFriendsCircle = [[VCDFriendsCircle alloc] initWithNibName:@"VCDFriendsCircle" bundle:nil];
+    
+    [self.navigationController pushViewController:vcdFriendsCircle animated:YES];
 }
 
 - (void)initMainScrollView

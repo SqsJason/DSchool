@@ -28,7 +28,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-            <point key="canvasLocation" x="500" y="417"/>
+            <point key="canvasLocation" x="388" y="389"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

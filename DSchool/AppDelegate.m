@@ -57,8 +57,20 @@
     [self.window makeKeyAndVisible];
     
     bgImage = [UIImage imageNamed:@"CommonBG"];
+    //初始化
+    self.floatButtonView = [FloatView defaultFloatViewWithButtonImageNameArray:@[@"icon_common_di",@"icon_common_di",@"icon_common_di",@"icon_common_di"]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(floatButtonClick:) name:FloatViewClickNotification object:nil];
 
     return YES;
+}
+
+#pragma mark - 报警信息悬浮按钮点击 -
+- (void)floatButtonClick:(NSNotification*)center
+{
+    NSString * message = @"点击滴按钮";
+    UIAlertView * alertFloatBtn = [[UIAlertView alloc]initWithTitle:@"消息" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    alertFloatBtn.tag = TagFloatBtnAlert_AppDalegate;
+    [alertFloatBtn show];
 }
 
 #pragma mark - Methods
@@ -136,20 +148,6 @@
     [navigationBarAppearance setBackgroundImage:backgroundImage
                                   forBarMetrics:UIBarMetricsDefault];
     [navigationBarAppearance setTitleTextAttributes:textAttributes];
-}
-
-#pragma mark - 报警信息悬浮按钮点击 -
-- (void)floatButtonClick:(NSNotification*)center
-{
-    [self.floatButtonView hideAlarmView];
-    NSString * message = @"点击报警信息按钮";
-    UIAlertView * alertFloatBtn = [[UIAlertView alloc]initWithTitle:@"通知"
-                                                            message:message
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"确定"
-                                                  otherButtonTitles:nil, nil];
-    alertFloatBtn.tag = TagFloatBtnAlert_AppDalegate;
-    [alertFloatBtn show];
 }
 
 #pragma mark - UIAlertViewDelegate -

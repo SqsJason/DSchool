@@ -7,7 +7,7 @@
 //
 
 #import "VCDFriendsCircle.h"
-#import "YTListCell.h"
+#import "CellFriendsCircle.h"
 
 @interface VCDFriendsCircle ()
 
@@ -32,7 +32,7 @@
     {
         if (i%2 == 0)
         {
-            ZZListEntity * entity = [[ZZListEntity alloc] init];
+            FCListEntity * entity = [[FCListEntity alloc] init];
             entity.head = @"test_icon_image";
             entity.inCount = @"10";
             entity.outCount = @"20";
@@ -45,23 +45,23 @@
             entity.date = @"1分钟前";
             entity.state = @"1";
             entity.wantCount = @"007";
+            entity.comment = @"Now repeat that until you come to your senses and continue reading whenever you’re ready.";
             [self.dataArray addObject:entity];
         }else
         {
-            ZZListEntity * entity = [[ZZListEntity alloc] init];
+            FCListEntity * entity = [[FCListEntity alloc] init];
             entity.head = @"test_icon_head2";
             entity.inCount = @"321";
             entity.outCount = @"123";
             entity.name = @"just believe me ";
             entity.content = @"I’m telling you that if you can read this article, look through this list and not claim it as your own, then you should be a little worried.Actually, you should be very worried. You should drop everything and immediately  question your existence on earth. You should find a mirror, look yourself in the eyes, raise your hand and slap yourself in the face.";
-//            entity.images = @[@"test_icon_image"];
+            entity.images = @[@"test_icon_image"];
             entity.date = @"100分钟前";
             entity.state = @"2";
             entity.wantCount = @"700";
+            entity.comment = @"I’m telling you that if you can read this article.";
             [self.dataArray addObject:entity];
         }
-        
-        
     }
     
     [self.tblCircle reloadData];
@@ -76,10 +76,9 @@
 #pragma mark - Table view data source
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    FCListEntity * entity = self.dataArray[indexPath.row];
     
-    ZZListEntity * entity = self.dataArray[indexPath.row];
-    
-    CGFloat height = [ZZListEntity getHightForListEntity:entity font:[YTListCell fontOfContent] width:[YTListCell contentWidth]];
+    CGFloat height = [FCListEntity getHightForListEntity:entity font:[CellFriendsCircle fontOfContent] width:[CellFriendsCircle contentWidth]];
     NSLog(@"cell 高度 :%f",height);
     return height;
 }
@@ -87,26 +86,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return self.dataArray.count;
 }
 
 
-- (YTListCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CellFriendsCircle *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString * identify = @"Cell";
+    static NSString *identify = @"CellFriendsCircle";
     
-    YTListCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
-    
-    // Configure the cell...
-    
+    CellFriendsCircle *cell = [tableView dequeueReusableCellWithIdentifier:identify];
     if (!cell) {
-        NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"YTListCell" owner:nil options:nil];
-        cell = [nib lastObject];
+        cell = [[CellFriendsCircle alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
     }
-    
+    [cell removeFrames];
     [cell setListEntity:self.dataArray[indexPath.row]];
+    
     return cell;
 }
 

@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 sunjason. All rights reserved.
 //
 
-#import "TableViewCell.h"
+#import "CellHomeDD.h"
 
-@implementation TableViewCell
+@implementation CellHomeDD
 
 - (void)awakeFromNib {
     // Initialization code

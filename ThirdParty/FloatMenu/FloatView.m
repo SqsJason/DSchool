@@ -75,7 +75,7 @@ static FloatView *__floatView = nil;
         _locationTag = kLocationTag_left;
         
         //初始化背景window
-        _boardWindow = [[UIWindow alloc] initWithFrame:CGRectMake(SCREEN_WIDTH_PORTRAIT - floatBtnWH, 0, floatBtnWH, floatBtnWH)];
+        _boardWindow = [[UIWindow alloc] initWithFrame:CGRectMake(SCREEN_WIDTH_PORTRAIT - floatBtnWH, SCREEN_HEIGHT_PORTRAIT- 54 - floatBtnWH, floatBtnWH, floatBtnWH)];
         _boardWindow.backgroundColor = [UIColor clearColor];
         _boardWindow.windowLevel = 3000;
         _boardWindow.clipsToBounds = YES;
@@ -98,7 +98,7 @@ static FloatView *__floatView = nil;
         
         _floatBtnTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, floatBtnWH, floatBtnWH)];
         _floatBtnTitle.textAlignment = NSTextAlignmentCenter;
-        _floatBtnTitle.text = @"新警报";
+        _floatBtnTitle.text = @"";
         _floatBtnTitle.font = [UIFont systemFontOfSize:12];
         _floatBtnTitle.textColor = [UIColor blackColor];
         [_boardView insertSubview:_floatBtnTitle aboveSubview:_floatImageView];
@@ -379,10 +379,10 @@ static FloatView *__floatView = nil;
 - (void)setImgaeNameWithMove:(BOOL)isMove
 {
     if (isMove) {
-        [_floatImageView setImage:[UIImage imageNamed:@"icon_float_btn_two"]];
+        [_floatImageView setImage:[UIImage imageNamed:@"icon_common_di"]];
     }else
     {
-        [_floatImageView setImage:[UIImage imageNamed:@"icon_float_btn_one"]];
+        [_floatImageView setImage:[UIImage imageNamed:@"icon_common_di"]];
     }
 }
 
