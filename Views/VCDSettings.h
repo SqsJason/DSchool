@@ -41,5 +41,19 @@
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellExit;
 
+/**
+ *  Actions For TitleCell
+ */
+@property (weak, nonatomic) IBOutlet UIButton *btnViewProfile;
+- (IBAction)btnViewProfile_action:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblTaskNumber;
+@property (weak, nonatomic) IBOutlet UIButton *btnRenWu;
+- (IBAction)btnRenWu_action:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblSCNumber;
+@property (weak, nonatomic) IBOutlet UIButton *btnSchoolCircle;
+- (IBAction)btnSchoolCircle_action:(id)sender;
+
 
 @end

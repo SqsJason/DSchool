@@ -22,6 +22,7 @@ PODS:
     - AFNetworking/NSURLSession
   - BeanTransitionManager (0.2.1)
   - GCJSONKit (1.5.0)
+  - IQKeyboardManager (3.2.4)
   - MBProgressHUD (0.9.1)
   - SBJson (4.0.1)
   - SDWebImage (3.7.2):
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - BeanTransitionManager (~> 0.2.1)
   - GCJSONKit (~> 1.5.0)
+  - IQKeyboardManager (~> 3.2.4)
   - MBProgressHUD (~> 0.9.1)
   - SBJson (~> 4.0.1)
   - SDWebImage (~> 3.7)
@@ -44,6 +46,7 @@ SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   BeanTransitionManager: 2198ae7911cdd50d70c6f62d931b7f072cc52303
   GCJSONKit: 8ad0067945efd217af8e610fa09ca0d02283b36b
+  IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   SBJson: 68f16f446bd6047dc3dd1ec4919a468c2cd7fedd
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29

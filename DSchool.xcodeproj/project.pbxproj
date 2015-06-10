@@ -29,6 +29,10 @@
 		EF7562151B272999008F2343 /* SVPullToRefreshView+OY_PullRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7562121B272999008F2343 /* SVPullToRefreshView+OY_PullRefreshView.m */; };
 		EF75623B1B274E3E008F2343 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7562281B274E3E008F2343 /* NSString+Size.m */; };
 		EF7562461B274EA5008F2343 /* CellFriendsCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7562451B274EA5008F2343 /* CellFriendsCircle.m */; };
+		EF75624A1B28AFB7008F2343 /* VCDLaunghMood.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7562481B28AFB7008F2343 /* VCDLaunghMood.m */; };
+		EF75624B1B28AFB7008F2343 /* VCDLaunghMood.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7562491B28AFB7008F2343 /* VCDLaunghMood.xib */; };
+		EF75624F1B28BB44008F2343 /* VCDTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75624D1B28BB44008F2343 /* VCDTasks.m */; };
+		EF7562501B28BB44008F2343 /* VCDTasks.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF75624E1B28BB44008F2343 /* VCDTasks.xib */; };
 		EF8BA25F1B1DDAE6008305A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA25E1B1DDAE6008305A0 /* main.m */; };
 		EF8BA2621B1DDAE6008305A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA2611B1DDAE6008305A0 /* AppDelegate.m */; };
 		EF8BA2651B1DDAE6008305A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA2641B1DDAE6008305A0 /* ViewController.m */; };
@@ -171,6 +175,12 @@
 		EF7562281B274E3E008F2343 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		EF7562441B274EA5008F2343 /* CellFriendsCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFriendsCircle.h; sourceTree = "<group>"; };
 		EF7562451B274EA5008F2343 /* CellFriendsCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFriendsCircle.m; sourceTree = "<group>"; };
+		EF7562471B28AFB7008F2343 /* VCDLaunghMood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDLaunghMood.h; sourceTree = "<group>"; };
+		EF7562481B28AFB7008F2343 /* VCDLaunghMood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDLaunghMood.m; sourceTree = "<group>"; };
+		EF7562491B28AFB7008F2343 /* VCDLaunghMood.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDLaunghMood.xib; sourceTree = "<group>"; };
+		EF75624C1B28BB44008F2343 /* VCDTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDTasks.h; sourceTree = "<group>"; };
+		EF75624D1B28BB44008F2343 /* VCDTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDTasks.m; sourceTree = "<group>"; };
+		EF75624E1B28BB44008F2343 /* VCDTasks.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDTasks.xib; sourceTree = "<group>"; };
 		EF8BA2591B1DDAE6008305A0 /* DSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8BA25D1B1DDAE6008305A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF8BA25E1B1DDAE6008305A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -807,6 +817,9 @@
 				EF7561D41B25D248008F2343 /* VCDDiscovery.xib */,
 				EF75620D1B272821008F2343 /* VCDDiscoveryNew.h */,
 				EF75620E1B272821008F2343 /* VCDDiscoveryNew.m */,
+				EF7562471B28AFB7008F2343 /* VCDLaunghMood.h */,
+				EF7562481B28AFB7008F2343 /* VCDLaunghMood.m */,
+				EF7562491B28AFB7008F2343 /* VCDLaunghMood.xib */,
 			);
 			name = Discovery;
 			sourceTree = "<group>";
@@ -817,6 +830,9 @@
 				EF8BA3631B1E1EF0008305A0 /* VCDSettings.h */,
 				EF8BA3641B1E1EF0008305A0 /* VCDSettings.m */,
 				EF8BA3651B1E1EF0008305A0 /* VCDSettings.xib */,
+				EF75624C1B28BB44008F2343 /* VCDTasks.h */,
+				EF75624D1B28BB44008F2343 /* VCDTasks.m */,
+				EF75624E1B28BB44008F2343 /* VCDTasks.xib */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -973,6 +989,7 @@
 				EF8BA3391B1DDEE3008305A0 /* VCSBrowserList.xib in Resources */,
 				EFB2575F1B20C55E00E37F8D /* VCDMessages.xib in Resources */,
 				EF8BA3351B1DDEE3008305A0 /* SlideImagesCell.xib in Resources */,
+				EF75624B1B28AFB7008F2343 /* VCDLaunghMood.xib in Resources */,
 				EF8BA31A1B1DDEE3008305A0 /* login_button@2x.png in Resources */,
 				EF8BA3171B1DDEE3008305A0 /* user_name_icon.png in Resources */,
 				EF8BA3671B1E1EF0008305A0 /* VCDSettings.xib in Resources */,
@@ -996,6 +1013,7 @@
 				EF8BA31C1B1DDEE3008305A0 /* EGOCache.podspec in Resources */,
 				EF8BA31D1B1DDEE3008305A0 /* LICENSE in Resources */,
 				EF8BA3131B1DDEE3008305A0 /* text_field.png in Resources */,
+				EF7562501B28BB44008F2343 /* VCDTasks.xib in Resources */,
 				EF8BA26A1B1DDAE6008305A0 /* Images.xcassets in Resources */,
 				EF8BA3181B1DDEE3008305A0 /* user_name_icon@2x.png in Resources */,
 				EF8BA3371B1DDEE3008305A0 /* VCSAlarmDetail.xib in Resources */,
@@ -1067,6 +1085,7 @@
 				EF8BA3241B1DDEE3008305A0 /* LRImagePresenter.m in Sources */,
 				444533B01B253A3800FC55DD /* ZZImagesView.m in Sources */,
 				EF8BA32E1B1DDEE3008305A0 /* TKRoundedView.m in Sources */,
+				EF75624F1B28BB44008F2343 /* VCDTasks.m in Sources */,
 				EF8BA3611B1E0D20008305A0 /* VCDSignUp.m in Sources */,
 				444533B61B253E0400FC55DD /* VCDFriendsCircle.m in Sources */,
 				EF8BA3261B1DDEE3008305A0 /* UIImage+LRImageManagerAdditions.m in Sources */,
@@ -1098,6 +1117,7 @@
 				EF8BA3231B1DDEE3008305A0 /* LRImageOperation.m in Sources */,
 				EF8BA3311B1DDEE3008305A0 /* CellHome.m in Sources */,
 				EF8BA2651B1DDAE6008305A0 /* ViewController.m in Sources */,
+				EF75624A1B28AFB7008F2343 /* VCDLaunghMood.m in Sources */,
 				EF8BA2621B1DDAE6008305A0 /* AppDelegate.m in Sources */,
 				EF7562151B272999008F2343 /* SVPullToRefreshView+OY_PullRefreshView.m in Sources */,
 				EF8BA3291B1DDEE3008305A0 /* FGalleryPhoto.m in Sources */,

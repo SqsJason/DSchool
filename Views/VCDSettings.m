@@ -41,13 +41,6 @@
     _btnExit.layer.cornerRadius = 5.0;
     _btnExit.layer.masksToBounds = YES;
     [_btnExit setBackgroundImage:[Util imageWithColorHigh:k_LoginColor_Header withLowColor:UIColorFromRGB(LCTTAlertFRBGBtnDoneLow) withsize:_btnExit.frame withHeightBottom:0] forState:UIControlStateNormal];
-    
-//    if (SCREEN_HEIGHT_PORTRAIT <= 568) {
-//        _tblSettings.scrollEnabled = YES;
-//    }else{
-//        _tblSettings.scrollEnabled = NO;
-//    }
-    
     [_tblSettings reloadData];
 }
 
@@ -198,9 +191,24 @@
     }
     
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (indexPath.section == 0) {
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }else{
+        cell.selectionStyle = UITableViewCellSelectionStyleDefault;
+    }
     
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+- (IBAction)btnViewProfile_action:(id)sender {
+}
+- (IBAction)btnRenWu_action:(id)sender {
+}
+- (IBAction)btnSchoolCircle_action:(id)sender {
+}
 @end

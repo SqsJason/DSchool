@@ -20,11 +20,70 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    [self initNavBar];
     
+    _arrTblDataSource = @[@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image"];
+}
+
+#pragma mark - 初始化导航栏内容 -
+- (void)initNavBar
+{
+    //=>    标题
     UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_home_title_image"]];
     self.navigationItem.titleView = imgView;
     
-    _arrTblDataSource = @[@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image"];
+    
+    //=>    学校按钮
+    UIButton *btnLeft = [[UIButton alloc]initWithFrame:CGRectMake(0,
+                                                                  0,
+                                                                  140,
+                                                                  40)];
+    [btnLeft setTitle:@">徐州工程学院" forState:UIControlStateNormal];
+    [btnLeft addTarget:self
+                     action:@selector(publishBtn_action)
+           forControlEvents:UIControlEventTouchUpInside];
+    btnLeft.titleLabel.font = [UIFont boldSystemFontOfSize:12];
+    UIBarButtonItem *itemLeft   = [[UIBarButtonItem alloc] initWithCustomView:btnLeft];
+    [btnLeft setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btnLeft setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+    
+    UIBarButtonItem *pozSpacerL   = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                                                                target:nil
+                                                                                action:nil];
+    [pozSpacerL setWidth:-20];
+    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:pozSpacerL,
+                                               itemLeft,
+                                               nil];
+    
+    
+    //=>    筛选按钮
+    UIButton *btnQuestions = [[UIButton alloc]initWithFrame:CGRectMake(0,
+                                                                       0,
+                                                                       80,
+                                                                       40)];
+    [btnQuestions setTitle:@">筛选" forState:UIControlStateNormal];
+    [btnQuestions addTarget:self
+                     action:@selector(publishBtn_action)
+           forControlEvents:UIControlEventTouchUpInside];
+    btnQuestions.titleLabel.font = [UIFont boldSystemFontOfSize:12];
+    UIBarButtonItem *itemRight   = [[UIBarButtonItem alloc] initWithCustomView:btnQuestions];
+    [btnQuestions setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btnQuestions setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+    
+    UIBarButtonItem *pozSpacer   = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                                                                target:nil
+                                                                                action:nil];
+    [pozSpacer setWidth:-15];
+    
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:pozSpacer,
+                                               itemRight,
+                                               nil];
+}
+
+#pragma mark - 点击发布朋友圈 -
+- (void)publishBtn_action{
+    
 }
 
 #pragma mark - tableview deleagate datasource stuff

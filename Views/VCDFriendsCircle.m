@@ -9,6 +9,7 @@
 #import "VCDFriendsCircle.h"
 #import "CellFriendsCircle.h"
 #import "JXBAdPageView.h"
+#import "VCDLaunghMood.h"
 
 static float const H_ADVIEW_HEIGHT           = 120;
 
@@ -112,11 +113,11 @@ static float const H_ADVIEW_HEIGHT           = 120;
                                                                        0,
                                                                        80,
                                                                        40)];
-    [btnQuestions setTitle:@"Save" forState:UIControlStateNormal];
+    [btnQuestions setTitle:@"发表" forState:UIControlStateNormal];
     [btnQuestions addTarget:self
                      action:@selector(publishBtn_action)
            forControlEvents:UIControlEventTouchUpInside];
-    btnQuestions.titleLabel.font = [UIFont systemFontOfSize:16];
+    btnQuestions.titleLabel.font = [UIFont boldSystemFontOfSize:14];
     UIBarButtonItem *itemRight   = [[UIBarButtonItem alloc] initWithCustomView:btnQuestions];
     
     UIBarButtonItem *pozSpacer   = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
@@ -131,7 +132,8 @@ static float const H_ADVIEW_HEIGHT           = 120;
 
 #pragma mark - 点击发布朋友圈 -
 - (void)publishBtn_action{
-    
+    VCDLaunghMood *pubMood = [[VCDLaunghMood alloc] initWithNibName:@"VCDLaunghMood" bundle:nil];
+    [self.navigationController pushViewController:pubMood animated:YES];
 }
 
 

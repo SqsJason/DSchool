@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D61EBA084E711400F55013F"
+               BlueprintIdentifier = "C76BF59ED365374929C03B83"
                BuildableName = "BeanTransitionManager.bundle"
                BlueprintName = "Pods-BeanTransitionManager-BeanTransitionManager"
                ReferencedContainer = "container:Pods.xcodeproj">
