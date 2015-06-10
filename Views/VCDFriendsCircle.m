@@ -8,8 +8,14 @@
 
 #import "VCDFriendsCircle.h"
 #import "CellFriendsCircle.h"
+#import "JXBAdPageView.h"
+
+static float const H_ADVIEW_HEIGHT           = 120;
 
 @interface VCDFriendsCircle ()
+
+@property(strong, nonatomic) JXBAdPageView     *adView;
+@property(nonatomic, strong) NSMutableArray    *arrAds;
 
 @end
 
@@ -19,16 +25,13 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self initNavBar];
+    [self initADView];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.title = @"校园圈";
+    //=>    初始化TableView的数据源
     self.dataArray = [NSMutableArray array];
-    
-    for (int i = 0; i<10; i++)
+    for (int i = 0; i<6; i++)
     {
         if (i%2 == 0)
         {
@@ -59,18 +62,118 @@
             entity.comment = @"I’m telling you that if you can read this article.";
             [self.dataArray addObject:entity];
         }
+        
+        for (int i = 0; i<3; i++)
+        {
+            if (i%2 == 0)
+            {
+                FCListEntity * entity = [[FCListEntity alloc] init];
+                entity.head = @"test_icon_image";
+                entity.inCount = @"10";
+                entity.outCount = @"20";
+                entity.name = @"黄伟华测试";
+                entity.content = @"I’m telling you that if you can read this article, look through this list and not claim it as your own, then you should be a little worried.Actually, you should be very worried. You should drop everything and immediately  question your existence on earth. You should find a mirror, look yourself in the eyes, raise your hand and slap yourself in the face.Got it? Now repeat that until you come to your senses and continue reading whenever you’re ready.";
+                entity.date = @"1分钟前";
+                entity.state = @"1";
+                entity.wantCount = @"007";
+                entity.comment = @"Now repeat that until you come to your senses and continue reading whenever you’re ready.";
+                [self.dataArray addObject:entity];
+            }else
+            {
+                FCListEntity * entity = [[FCListEntity alloc] init];
+                entity.head = @"test_icon_head2";
+                entity.inCount = @"321";
+                entity.outCount = @"123";
+                entity.name = @"just believe me ";
+                entity.content = @"I’m telling you that if you can read this article, look through this list and not claim it as your own, then you should be a little worried.Actually, you should be very worried. You should drop everything and immediately  question your existence on earth. You should find a mirror, look yourself in the eyes, raise your hand and slap yourself in the face.";
+                entity.images = @[@"test_icon_image", @"test_icon_image", @"test_icon_image"];
+                entity.date = @"100分钟前";
+                entity.state = @"2";
+                entity.wantCount = @"700";
+                entity.comment = @"I’m telling you that if you can read this article.";
+                [self.dataArray addObject:entity];
+            }
+        }
     }
     
+    //=>    刷新数据
     [self.tblCircle reloadData];
 }
 
-- (void)didReceiveMemoryWarning
+
+#pragma mark - 初始化导航栏内容 -
+- (void)initNavBar
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    //=>    标题
+    self.title = @"校园圈";
+    
+    //=>    发布按钮
+    UIButton *btnQuestions = [[UIButton alloc]initWithFrame:CGRectMake(0,
+                                                                       0,
+                                                                       80,
+                                                                       40)];
+    [btnQuestions setTitle:@"Save" forState:UIControlStateNormal];
+    [btnQuestions addTarget:self
+                     action:@selector(publishBtn_action)
+           forControlEvents:UIControlEventTouchUpInside];
+    btnQuestions.titleLabel.font = [UIFont systemFontOfSize:16];
+    UIBarButtonItem *itemRight   = [[UIBarButtonItem alloc] initWithCustomView:btnQuestions];
+    
+    UIBarButtonItem *pozSpacer   = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                                                                target:nil
+                                                                                action:nil];
+    [pozSpacer setWidth:-30];
+    
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:pozSpacer,
+                                               itemRight,
+                                               nil];
+}
+
+#pragma mark - 点击发布朋友圈 -
+- (void)publishBtn_action{
+    
+}
+
+
+#pragma mark - 初始化广告位 -
+- (void)initADView
+{
+    _arrAds = [[NSMutableArray alloc] initWithArray:@[@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image",@"test_icon_image"]];
+    
+    _adView = [[JXBAdPageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH_PORTRAIT, H_ADVIEW_HEIGHT)];
+    _adView.iDisplayTime = 2;
+    _advFriendsCircle.backgroundColor = CLQASetDateBorder;
+    [_adView startAdsWithBlock:_arrAds block:^(NSInteger clickIndex){
+        
+    }];
+    [_advFriendsCircle addSubview:_adView];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if ([self.tblCircle respondsToSelector:@selector(setSeparatorInset:)]) {
+        [self.tblCircle setSeparatorInset: UIEdgeInsetsZero];
+    }
+    if ([self.tblCircle respondsToSelector:@selector(setLayoutMargins:)]) {
+        [self.tblCircle setLayoutMargins: UIEdgeInsetsZero];
+    }
 }
 
 #pragma mark - Table view data source
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *_vHeader = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH_PORTRAIT, 5)];
+    _vHeader.backgroundColor = [UIColor whiteColor];
+    return _vHeader;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 5;
+}
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     FCListEntity * entity = self.dataArray[indexPath.row];

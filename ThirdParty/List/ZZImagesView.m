@@ -25,7 +25,7 @@
     {
         if (imgs.count == 1)
         {
-            UIImageView * one = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), onePictureHeight)];
+            UIImageView * one = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, onePictureHeight)];
             one.image = [UIImage imageNamed:imgs[0]];
             [self addSubview:one];
             self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, [self.class heightForImages:imgs]);

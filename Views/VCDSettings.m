@@ -14,6 +14,7 @@
     NSMutableArray *arrSectionTwoCells;
     NSMutableArray *arrSectionThreeCells;
     NSMutableArray *arrSectionFourCells;
+    NSMutableArray *arrSectionFiveCells;
 }
 
 @end
@@ -35,16 +36,17 @@
     arrSectionTwoCells = [NSMutableArray arrayWithObjects:_CellSettingsCustoms, _CellZan, nil];
     arrSectionThreeCells = [NSMutableArray arrayWithObjects:_CellNotice, _CellAdvice, nil];
     arrSectionFourCells = [NSMutableArray arrayWithObjects:_CellUpdatePs, _CellOtherSets,_CellExit, nil];
+    arrSectionFiveCells = [NSMutableArray arrayWithObjects:_CellVipsRight, _CellMinePoints,_CellVipsCard, nil];
     
     _btnExit.layer.cornerRadius = 5.0;
     _btnExit.layer.masksToBounds = YES;
     [_btnExit setBackgroundImage:[Util imageWithColorHigh:k_LoginColor_Header withLowColor:UIColorFromRGB(LCTTAlertFRBGBtnDoneLow) withsize:_btnExit.frame withHeightBottom:0] forState:UIControlStateNormal];
     
-    if (SCREEN_HEIGHT_PORTRAIT <= 568) {
-        _tblSettings.scrollEnabled = YES;
-    }else{
-        _tblSettings.scrollEnabled = NO;
-    }
+//    if (SCREEN_HEIGHT_PORTRAIT <= 568) {
+//        _tblSettings.scrollEnabled = YES;
+//    }else{
+//        _tblSettings.scrollEnabled = NO;
+//    }
     
     [_tblSettings reloadData];
 }
@@ -95,7 +97,7 @@
     float footerHeight;
     
     switch (section) {
-        case 3:
+        case 4:
         {
             if (SCREEN_HEIGHT_PORTRAIT <= 568) {
                 footerHeight = 100;
@@ -117,7 +119,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 4;
+    return 5;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -134,6 +136,9 @@
             return ((UITableViewCell*)[arrSectionThreeCells objectAtIndex:indexPath.row]).frame.size.height;
             break;
         case 3:
+            return ((UITableViewCell*)[arrSectionFiveCells objectAtIndex:indexPath.row]).frame.size.height;
+            break;
+        case 4:
             return ((UITableViewCell*)[arrSectionFourCells objectAtIndex:indexPath.row]).frame.size.height;
             break;
         default:
@@ -156,6 +161,9 @@
             return arrSectionThreeCells.count;
             break;
         case 3:
+            return arrSectionFiveCells.count;
+            break;
+        case 4:
             return arrSectionFourCells.count;
             break;
         default:
@@ -179,6 +187,9 @@
             cell =  (UITableViewCell*)[arrSectionThreeCells objectAtIndex:indexPath.row];
             break;
         case 3:
+            cell =  (UITableViewCell*)[arrSectionFiveCells objectAtIndex:indexPath.row];
+            break;
+        case 4:
             cell =  (UITableViewCell*)[arrSectionFourCells objectAtIndex:indexPath.row];
             break;
         default:

@@ -26,14 +26,15 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblBasicInfo;
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellZan;
-
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellNotice;
-
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellAdvice;
-
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellUpdatePs;
-
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellOtherSets;
+
+@property (strong, nonatomic) IBOutlet UITableViewCell *CellVipsRight;
+@property (strong, nonatomic) IBOutlet UITableViewCell *CellMinePoints;
+@property (strong, nonatomic) IBOutlet UITableViewCell *CellVipsCard;
+
 
 @property (strong, nonatomic) IBOutlet UIView *vFooterV;
 @property (weak, nonatomic) IBOutlet UIButton *btnExit;

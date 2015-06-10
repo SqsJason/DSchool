@@ -17,5 +17,6 @@
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellAssioAndStuUnion;
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellCanteen;
 
+@property (weak, nonatomic) IBOutlet UIView *vADViewHolder;
 
 @end

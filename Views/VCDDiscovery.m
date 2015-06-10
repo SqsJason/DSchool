@@ -26,7 +26,7 @@ static float const H_BTNVIEWPADDING_TOP      = 10;
 @property (weak, nonatomic) IBOutlet UIView *vCanteen;
 
 
-@property(strong, nonatomic) JXBAdPageView *adView;
+@property(strong, nonatomic) JXBAdPageView     *adView;
 @property(nonatomic, strong) NSMutableArray    *arrAds;
 @property(nonatomic, strong) NSArray           *arrTblDataSource;
 
@@ -100,14 +100,14 @@ static float const H_BTNVIEWPADDING_TOP      = 10;
 
 - (void) initAdView:(NSMutableArray *)arr
 {
-    _adView = [[JXBAdPageView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH_PORTRAIT, H_ADVIEW_HEIGHT)];
+    _adView = [[JXBAdPageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH_PORTRAIT, H_ADVIEW_HEIGHT)];
     _adView.iDisplayTime = 2;
     _adView.backgroundColor = CLQASetDateBorder;
     [_adView startAdsWithBlock:_arrAds block:^(NSInteger clickIndex){
         
     }];
     
-    [self.view addSubview:_adView];
+    [_vADViewHolder addSubview:_adView];
 }
 
 - (void)initBtnViews

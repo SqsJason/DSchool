@@ -12,5 +12,6 @@
 
 @property (nonatomic, retain) NSMutableArray * dataArray;
 @property (weak, nonatomic) IBOutlet UITableView *tblCircle;
+@property (weak, nonatomic) IBOutlet UIView *advFriendsCircle;
 
 @end
