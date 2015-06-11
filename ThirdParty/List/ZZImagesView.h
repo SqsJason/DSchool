@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-static float onePictureHeight = 145.f;  //一张图片的高度
+static float onePictureHeight = 150.f;  //一张图片的高度
 
 static int oneRowCount = 3; // 一行 3 col
 
@@ -24,6 +24,15 @@ static float rowSpace = 10.f;
 
 
 @interface ZZImagesView : UIView
+{
+    float onePicture_Max_W;
+    float onePicture_Max_H;
+    
+    float multiPhoto_W;
+    float multiPhoto_H;
+}
+
+@property (nonatomic) float onePicture_H;
 
 +(float)heightForImages:(NSArray *)images;
 -(void)setImags:(NSArray *)imgs;

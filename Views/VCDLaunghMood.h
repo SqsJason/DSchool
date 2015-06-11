@@ -7,8 +7,9 @@
 //
 
 #import "StandarViewController.h"
+#import "CellColectionCustom.h"
 
-@interface VCDLaunghMood : StandarViewController
+@interface VCDLaunghMood : StandarViewController <UICollectionViewDataSource, UICollectionViewDelegate, CellColectionCustomDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tblPubMood;
 @property (weak, nonatomic) IBOutlet UICollectionView *cvPubMood;
@@ -21,8 +22,10 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblTime;
 @property (weak, nonatomic) IBOutlet UITextView *tvInputContent;
-@property (weak, nonatomic) IBOutlet UILabel *lblReward;
-@property (weak, nonatomic) IBOutlet UILabel *lblPeopleNumber;
+
+@property (weak, nonatomic) IBOutlet UITextField *tfReward;
+@property (weak, nonatomic) IBOutlet UITextField *tfPeopleNumber;
+
 
 
 @end

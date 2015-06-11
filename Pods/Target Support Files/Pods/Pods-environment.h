@@ -72,6 +72,12 @@
 #define COCOAPODS_VERSION_MINOR_MBProgressHUD 9
 #define COCOAPODS_VERSION_PATCH_MBProgressHUD 1
 
+// QBImagePickerController
+#define COCOAPODS_POD_AVAILABLE_QBImagePickerController
+#define COCOAPODS_VERSION_MAJOR_QBImagePickerController 3
+#define COCOAPODS_VERSION_MINOR_QBImagePickerController 2
+#define COCOAPODS_VERSION_PATCH_QBImagePickerController 0
+
 // SBJson
 #define COCOAPODS_POD_AVAILABLE_SBJson
 #define COCOAPODS_VERSION_MAJOR_SBJson 4

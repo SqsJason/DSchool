@@ -123,4 +123,16 @@
 }
 - (IBAction)actQQLogin:(id)sender {
 }
+
+
+/**
+ *  Father Methods
+ */
+#pragma mark - viewWillAppear -
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [appDelegate().floatButtonView hideAlarmView];
+}
+
 @end

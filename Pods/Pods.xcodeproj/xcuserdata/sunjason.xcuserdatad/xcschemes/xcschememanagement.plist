@@ -34,6 +34,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-QBImagePickerController-QBImagePicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-QBImagePickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SBJson.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,57 +72,67 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>127081C12DC4824F2166A597</key>
+		<key>09F48D268B22E214D122E2F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>220A4EC53C5C0BC91CBD2F7E</key>
+		<key>0A111E315F24EB0A13D3FC3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>368EA979F9DEF6F066010CAF</key>
+		<key>0EC8DC2154778700BE8A2546</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>52EB8DE71422EB6D41622F23</key>
+		<key>0F4008B8058B85BB6F12C9EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5C679B413B726DD8EF5C3E75</key>
+		<key>0F53F99985CCB9AC2814321E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8210D12EF1C6C8ED4693D680</key>
+		<key>1CCB46BD9BC7C6FC3E7795E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A053AEE0154A9AA1B8F46AC0</key>
+		<key>1D6B7229507A1A08DC4D0593</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC2083AD82EBF542232EF2C4</key>
+		<key>38C01346B134E47ED99125D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BCFE75CD7FE7096C3A692810</key>
+		<key>3F78E011267E3823E521DD91</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C76BF59ED365374929C03B83</key>
+		<key>400F387CCE6CD4C4A16C7853</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E7A15D3D40A3179C0146CCF4</key>
+		<key>450AF9307613003F4BFBEC4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BE425473A7F9BB847C3FE39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3F0377D7441321C268EC9BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

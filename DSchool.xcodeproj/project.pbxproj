@@ -33,6 +33,8 @@
 		EF75624B1B28AFB7008F2343 /* VCDLaunghMood.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7562491B28AFB7008F2343 /* VCDLaunghMood.xib */; };
 		EF75624F1B28BB44008F2343 /* VCDTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75624D1B28BB44008F2343 /* VCDTasks.m */; };
 		EF7562501B28BB44008F2343 /* VCDTasks.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF75624E1B28BB44008F2343 /* VCDTasks.xib */; };
+		EF88E4161B29C2F8006469CD /* CellColectionCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = EF88E4151B29C2F8006469CD /* CellColectionCustom.m */; };
+		EF88E4181B29DAA5006469CD /* CellColectionCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF88E4171B29DAA5006469CD /* CellColectionCustom.xib */; };
 		EF8BA25F1B1DDAE6008305A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA25E1B1DDAE6008305A0 /* main.m */; };
 		EF8BA2621B1DDAE6008305A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA2611B1DDAE6008305A0 /* AppDelegate.m */; };
 		EF8BA2651B1DDAE6008305A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8BA2641B1DDAE6008305A0 /* ViewController.m */; };
@@ -181,6 +183,9 @@
 		EF75624C1B28BB44008F2343 /* VCDTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDTasks.h; sourceTree = "<group>"; };
 		EF75624D1B28BB44008F2343 /* VCDTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDTasks.m; sourceTree = "<group>"; };
 		EF75624E1B28BB44008F2343 /* VCDTasks.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCDTasks.xib; sourceTree = "<group>"; };
+		EF88E4141B29C2F8006469CD /* CellColectionCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellColectionCustom.h; sourceTree = "<group>"; };
+		EF88E4151B29C2F8006469CD /* CellColectionCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellColectionCustom.m; sourceTree = "<group>"; };
+		EF88E4171B29DAA5006469CD /* CellColectionCustom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellColectionCustom.xib; sourceTree = "<group>"; };
 		EF8BA2591B1DDAE6008305A0 /* DSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8BA25D1B1DDAE6008305A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF8BA25E1B1DDAE6008305A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -422,12 +427,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		444533A51B253A3800FC55DD /* List */ = {
+		444533A51B253A3800FC55DD /* ZZImages */ = {
 			isa = PBXGroup;
 			children = (
 				444533A91B253A3800FC55DD /* ZZImagesView.h */,
 				444533AA1B253A3800FC55DD /* ZZImagesView.m */,
 			);
+			name = ZZImages;
 			path = List;
 			sourceTree = "<group>";
 		};
@@ -461,6 +467,9 @@
 		EF7562231B274DAD008F2343 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				EF88E4141B29C2F8006469CD /* CellColectionCustom.h */,
+				EF88E4151B29C2F8006469CD /* CellColectionCustom.m */,
+				EF88E4171B29DAA5006469CD /* CellColectionCustom.xib */,
 				EF7562441B274EA5008F2343 /* CellFriendsCircle.h */,
 				EF7562451B274EA5008F2343 /* CellFriendsCircle.m */,
 			);
@@ -609,7 +618,7 @@
 			isa = PBXGroup;
 			children = (
 				EF7562091B25F737008F2343 /* JXBAdPageView */,
-				444533A51B253A3800FC55DD /* List */,
+				444533A51B253A3800FC55DD /* ZZImages */,
 				EFB257661B21FA8700E37F8D /* MLTransition */,
 				EFB257511B2092C300E37F8D /* RDVTabBarController */,
 				EF8BA2E11B1DDEE3008305A0 /* SHXMLParser */,
@@ -1005,6 +1014,7 @@
 				EF8BA2681B1DDAE6008305A0 /* Main.storyboard in Resources */,
 				EF8BA33D1B1DDEE3008305A0 /* VCSLogin.xib in Resources */,
 				EF7561D61B25D248008F2343 /* VCDDiscovery.xib in Resources */,
+				EF88E4181B29DAA5006469CD /* CellColectionCustom.xib in Resources */,
 				444533B71B253E0400FC55DD /* VCDFriendsCircle.xib in Resources */,
 				EF8BA33B1B1DDEE3008305A0 /* VCSHome.xib in Resources */,
 				EF8BA3021B1DDEE3008305A0 /* Localizable.strings in Resources */,
@@ -1129,6 +1139,7 @@
 				EF8BA32D1B1DDEE3008305A0 /* SHXMLParser.m in Sources */,
 				EFB2576E1B21FA8700E37F8D /* MLTransitionAnimation.m in Sources */,
 				EF8BA3031B1DDEE3008305A0 /* ENBrand.m in Sources */,
+				EF88E4161B29C2F8006469CD /* CellColectionCustom.m in Sources */,
 				EF75623B1B274E3E008F2343 /* NSString+Size.m in Sources */,
 				EF8BA30D1B1DDEE3008305A0 /* SVGetOrderList.m in Sources */,
 				EF8BA25F1B1DDAE6008305A0 /* main.m in Sources */,

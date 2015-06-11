@@ -32,6 +32,33 @@ static float const H_ADVIEW_HEIGHT           = 120;
     
     //=>    初始化TableView的数据源
     self.dataArray = [NSMutableArray array];
+    
+    FCListEntity * entity = [[FCListEntity alloc] init];
+    entity.head = @"test_icon_head2";
+    entity.inCount = @"321";
+    entity.outCount = @"123";
+    entity.name = @"请认真点";
+    entity.content = @"你说这个 我就想起 我们培训的时候遇到一个老师 特别搞笑 他特别爱挑bug 然后你问他的时候他如果解决不了就说是系统机制问题. 你说这个 我就想起 我们培训的时候遇到一个老师 特别搞笑 他特别爱挑bug 然后你问他的时候他如果解决不了就说是系统机制问题";
+    entity.images = @[@"test_icon_image"];
+    entity.date = @"100分钟前";
+    entity.state = @"2";
+    entity.wantCount = @"700";
+    entity.comment = @"Read this article.";
+    [self.dataArray addObject:entity];
+    
+    FCListEntity * entity1 = [[FCListEntity alloc] init];
+    entity1.head = @"test_icon_head2";
+    entity1.inCount = @"321";
+    entity1.outCount = @"123";
+    entity1.name = @"请认真点";
+    entity1.content = @"你说这个 我就想起 我们培训的时候遇到一个老师 特别搞笑 他特别爱挑bug 然后你问他的时候他如果解决不了就说是系统机制问题. 你说这个 我就想起 我们培训的时候遇到一个老师 特别搞笑 他特别爱挑bug 然后你问他的时候他如果解决不了就说是系统机制问题";
+    entity1.images = @[@"test_icon_head1",@"test_icon_image"];
+    entity1.date = @"100分钟前";
+    entity1.state = @"2";
+    entity1.wantCount = @"700";
+    entity1.comment = @"Read this article.";
+    [self.dataArray addObject:entity1];
+    
     for (int i = 0; i<6; i++)
     {
         if (i%2 == 0)
@@ -51,12 +78,12 @@ static float const H_ADVIEW_HEIGHT           = 120;
         }else
         {
             FCListEntity * entity = [[FCListEntity alloc] init];
-            entity.head = @"test_icon_head2";
+            entity.head = @"test_icon_image";
             entity.inCount = @"321";
             entity.outCount = @"123";
-            entity.name = @"just believe me ";
+            entity.name = @"说话啊";
             entity.content = @"点击 嘀 页面弹出状态 或 任务 用户选择 进入创建页面. 点击 嘀 页面弹出状态 或 任务 用户选择 进入创建页面";
-            entity.images = @[@"test_icon_image"];
+            entity.images = @[@"test_icon_image",@"test_icon_image", @"test_icon_image", @"test_icon_image",@"test_icon_image", @"test_icon_image", @"test_icon_image"];
             entity.date = @"100分钟前";
             entity.state = @"2";
             entity.wantCount = @"700";
@@ -78,6 +105,7 @@ static float const H_ADVIEW_HEIGHT           = 120;
                 entity.state = @"1";
                 entity.wantCount = @"007";
                 entity.comment = @"你说这个...";
+                entity.images = @[@"icon_register_footer_bg"];
                 [self.dataArray addObject:entity];
             }else
             {
@@ -85,9 +113,9 @@ static float const H_ADVIEW_HEIGHT           = 120;
                 entity.head = @"test_icon_head2";
                 entity.inCount = @"321";
                 entity.outCount = @"123";
-                entity.name = @"just believe me ";
+                entity.name = @"请认真点";
                 entity.content = @"你说这个 我就想起 我们培训的时候遇到一个老师 特别搞笑 他特别爱挑bug 然后你问他的时候他如果解决不了就说是系统机制问题. 你说这个 我就想起 我们培训的时候遇到一个老师 特别搞笑 他特别爱挑bug 然后你问他的时候他如果解决不了就说是系统机制问题";
-                entity.images = @[@"test_icon_image", @"test_icon_image", @"test_icon_image"];
+                entity.images = @[@"test_icon_image", @"test_icon_image", @"test_icon_image",@"test_icon_image"];
                 entity.date = @"100分钟前";
                 entity.state = @"2";
                 entity.wantCount = @"700";
@@ -118,6 +146,9 @@ static float const H_ADVIEW_HEIGHT           = 120;
                      action:@selector(publishBtn_action)
            forControlEvents:UIControlEventTouchUpInside];
     btnQuestions.titleLabel.font = [UIFont boldSystemFontOfSize:14];
+    [btnQuestions setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btnQuestions setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+    
     UIBarButtonItem *itemRight   = [[UIBarButtonItem alloc] initWithCustomView:btnQuestions];
     
     UIBarButtonItem *pozSpacer   = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
@@ -149,31 +180,21 @@ static float const H_ADVIEW_HEIGHT           = 120;
         
     }];
     [_advFriendsCircle addSubview:_adView];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
     
-    if ([self.tblCircle respondsToSelector:@selector(setSeparatorInset:)]) {
-        [self.tblCircle setSeparatorInset: UIEdgeInsetsZero];
-    }
-    if ([self.tblCircle respondsToSelector:@selector(setLayoutMargins:)]) {
-        [self.tblCircle setLayoutMargins: UIEdgeInsetsZero];
-    }
+    _tblCircle.tableHeaderView = _advFriendsCircle;
 }
 
 #pragma mark - Table view data source
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView *_vHeader = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH_PORTRAIT, 5)];
+    UIView *_vHeader = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH_PORTRAIT, 0)];
     _vHeader.backgroundColor = [UIColor whiteColor];
     return _vHeader;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 5;
+    return 0;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -207,46 +228,6 @@ static float const H_ADVIEW_HEIGHT           = 120;
     return cell;
 }
 
-
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
-
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
@@ -256,6 +237,22 @@ static float const H_ADVIEW_HEIGHT           = 120;
     
     UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"点击" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
     [alert show];
+}
+
+/**
+ *  Father Methods
+ */
+#pragma mark - viewWillAppear -
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    if ([self.tblCircle respondsToSelector:@selector(setSeparatorInset:)]) {
+        [self.tblCircle setSeparatorInset: UIEdgeInsetsZero];
+    }
+    if ([self.tblCircle respondsToSelector:@selector(setLayoutMargins:)]) {
+        [self.tblCircle setLayoutMargins: UIEdgeInsetsZero];
+    }
 }
 
 @end

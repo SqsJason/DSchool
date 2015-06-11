@@ -33,30 +33,6 @@
     UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_home_title_image"]];
     self.navigationItem.titleView = imgView;
     
-    
-//    //=>    学校按钮
-//    UIButton *btnLeft = [[UIButton alloc]initWithFrame:CGRectMake(0,
-//                                                                  0,
-//                                                                  140,
-//                                                                  40)];
-//    [btnLeft setTitle:@">徐州工程学院" forState:UIControlStateNormal];
-//    [btnLeft addTarget:self
-//                     action:@selector(publishBtn_action)
-//           forControlEvents:UIControlEventTouchUpInside];
-//    btnLeft.titleLabel.font = [UIFont boldSystemFontOfSize:12];
-//    UIBarButtonItem *itemLeft   = [[UIBarButtonItem alloc] initWithCustomView:btnLeft];
-//    [btnLeft setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//    [btnLeft setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-//    
-//    UIBarButtonItem *pozSpacerL   = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-//                                                                                target:nil
-//                                                                                action:nil];
-//    [pozSpacerL setWidth:-20];
-//    self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:pozSpacerL,
-//                                               itemLeft,
-//                                               nil];
-    
-    
     //=>    筛选按钮
     UIButton *btnQuestions = [[UIButton alloc]initWithFrame:CGRectMake(0,
                                                                        0,
@@ -138,18 +114,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-}
-
-- (void) viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-//    [appDelegate().floatButtonView showAlarmView];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-//    [appDelegate().floatButtonView hideAlarmView];
 }
 
 @end

@@ -29,5 +29,22 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnCommentNum;
 @property (weak, nonatomic) IBOutlet UIButton *btnZanNum;
 
+@end
+
+
+@interface TaskEntity : NSObject
+@property (nonatomic, weak)   NSString  * head;
+@property (nonatomic, weak)   NSString  * inCount;
+@property (nonatomic, weak)   NSString  * outCount;
+
+@property (nonatomic, weak)   NSString  * name;
+@property (nonatomic, weak)   NSString  * content;
+@property (nonatomic, strong) NSArray   * images;
+@property (nonatomic, weak)   NSString  * date;
+@property (nonatomic, weak)   NSString  * wantCount;
+@property (nonatomic, weak)   NSString  * state;
+@property (nonatomic, weak)   NSString  * comment;
+
++(CGFloat)getHightForTaskEntity:(TaskEntity *)taskEntity font:(UIFont *)font width:(CGFloat)width;
 
 @end

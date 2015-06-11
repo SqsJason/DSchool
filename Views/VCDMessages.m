@@ -97,4 +97,14 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
+/**
+ *  Father Methods
+ */
+#pragma mark - viewWillAppear -
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [appDelegate().floatButtonView showAlarmView];
+}
+
 @end

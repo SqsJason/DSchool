@@ -83,4 +83,19 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+
+/**
+ *  Father Methods
+ */
+#pragma mark - viewWillAppear -
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if (self.navigationController.viewControllers.count == 1) {
+        [appDelegate().floatButtonView showAlarmView];
+    }else{
+        [appDelegate().floatButtonView hideAlarmView];
+    }
+}
+
 @end

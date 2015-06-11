@@ -1,4 +1,4 @@
-platform :ios, '7.0'
+platform :ios, '8.0'
 pod "AFNetworking", "~> 2.0"
 pod 'SDWebImage', '~>3.7'
 pod 'SVProgressHUD', '~> 1.1.3'
@@ -9,3 +9,4 @@ pod 'SBJson', '~> 4.0.1'
 pod 'GCJSONKit', '~> 1.5.0'
 pod 'SVPullToRefresh'
 pod 'IQKeyboardManager', '~> 3.2.4'
+pod 'QBImagePickerController'
