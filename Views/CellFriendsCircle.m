@@ -92,7 +92,7 @@ static const float IMV_TIME_H         = 20.0;
     
     
     //
-    genderIcon.frame = CGRectMake(nameSize.width + name.frame.origin.x + 15, name.frame.origin.y, 18, 18);
+    genderIcon.frame = CGRectMake(nameSize.width + name.frame.origin.x + 10, name.frame.origin.y, 18, 18);
     genderIcon.image = [UIImage imageNamed:@"icon_sex_female_red"];
     
     
@@ -134,10 +134,10 @@ static const float IMV_TIME_H         = 20.0;
     lblComment.numberOfLines = 1;
     lblComment.text = entity.comment;
     CGSize sizeComment = [lblComment.text textSizeWithFont:lblComment.font constrainedToSize:CGSizeMake([self.class contentWidth], 300) lineBreakMode:NSLineBreakByWordWrapping];
-    lblComment.frame = CGRectMake(head.frame.size.width + 25, lblDateAndTime.frame.origin.y + IMV_TIME_H + IMV_HEAD_PADDING_T, sizeComment.width - 10, sizeComment.height);
+    lblComment.frame = CGRectMake(head.frame.size.width + 25, lblDateAndTime.frame.origin.y + IMV_TIME_H + IMV_HEAD_PADDING_T, sizeComment.width , sizeComment.height);
     
     
-    imvCommentBG.frame = CGRectMake(head.frame.size.width + 15, lblComment.frame.origin.y - IMV_HEAD_PADDING_T, [self.class contentWidth], sizeComment.height + 15);
+    imvCommentBG.frame = CGRectMake(head.frame.size.width + 15, lblComment.frame.origin.y - IMV_HEAD_PADDING_T - 5, [self.class contentWidth], sizeComment.height + 25);
     imvCommentBG.image = [UIImage imageNamed:@"icon_discovery_content_bg"];
 }
 

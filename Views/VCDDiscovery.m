@@ -10,7 +10,7 @@
 #import "JXBAdPageView.h"
 #import "VCDFriendsCircle.h"
 
-static float const H_ADVIEW_HEIGHT           = 160;
+static float const H_ADVIEW_HEIGHT           = 140;
 static float const H_LIFEVIEW_HEIGHT         = 100;
 static float const H_ASSIOCIATIONVIEW_HEIGHT = 100;
 static float const H_STUDENTUNIONVIEW_HEIGHT = 100;

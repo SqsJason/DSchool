@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>Pods-IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>Pods-MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -44,6 +49,11 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>Pods-SVPullToRefresh.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -52,6 +62,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>127081C12DC4824F2166A597</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>136CC0BC12D7312ADBEEC51F</key>
 		<dict>
 			<key>primary</key>
@@ -62,12 +77,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>220A4EC53C5C0BC91CBD2F7E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2AE0D5A8102B7AB8B5A8F4D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>368EA979F9DEF6F066010CAF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>49025C673112D1AB1FCEB830</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52EB8DE71422EB6D41622F23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C679B413B726DD8EF5C3E75</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,7 +117,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8210D12EF1C6C8ED4693D680</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A053AEE0154A9AA1B8F46AC0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC2083AD82EBF542232EF2C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BCFE75CD7FE7096C3A692810</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C76BF59ED365374929C03B83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DC112DE595D137E7D153CCF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7A15D3D40A3179C0146CCF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

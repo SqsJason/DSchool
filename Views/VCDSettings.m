@@ -211,4 +211,7 @@
 }
 - (IBAction)btnSchoolCircle_action:(id)sender {
 }
+- (IBAction)btnLogout_action:(id)sender {
+    [appDelegate() logout];
+}
 @end

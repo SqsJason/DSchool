@@ -222,10 +222,6 @@
 
 #pragma mark - 登出 -
 -(void)logout{
-    [Util removeObjectForKey:LSSTRING(@"Key_UserDefaults_Username")];
-    [Util removeObjectForKey:LSSTRING(@"Key_UserDefaults_Password")];
-    [dicProfiles removeAllObjects];
-    [Util removeFileWithDirectory:[NSString stringWithFormat:@"%@/Profile.json",[Util cacheDirectoryWithName:folderData]]];
     [self showFirstView];
 }
 

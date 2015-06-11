@@ -41,12 +41,12 @@ static float const H_ADVIEW_HEIGHT           = 120;
             entity.inCount = @"10";
             entity.outCount = @"20";
             entity.name = @"黄伟华测试";
-            entity.content = @"I’m telling you that if you can read this article, look through this list and not claim it as your own, then you should be a little worried.Actually, you should be very worried. You should drop everything and immediately  question your existence on earth. You should find a mirror, look yourself in the eyes, raise your hand and slap yourself in the face.Got it? Now repeat that until you come to your senses and continue reading whenever you’re ready.";
+            entity.content = @"点击 嘀 页面弹出状态 或 任务 用户选择 进入创建页面.";
             entity.images = @[@"test_icon_image"];
             entity.date = @"1分钟前";
             entity.state = @"1";
             entity.wantCount = @"007";
-            entity.comment = @"Now repeat that until you come to your senses and continue reading whenever you’re ready.";
+            entity.comment = @"Now repeat that.";
             [self.dataArray addObject:entity];
         }else
         {
@@ -55,12 +55,12 @@ static float const H_ADVIEW_HEIGHT           = 120;
             entity.inCount = @"321";
             entity.outCount = @"123";
             entity.name = @"just believe me ";
-            entity.content = @"I’m telling you that if you can read this article, look through this list and not claim it as your own, then you should be a little worried.Actually, you should be very worried. You should drop everything and immediately  question your existence on earth. You should find a mirror, look yourself in the eyes, raise your hand and slap yourself in the face.";
+            entity.content = @"点击 嘀 页面弹出状态 或 任务 用户选择 进入创建页面. 点击 嘀 页面弹出状态 或 任务 用户选择 进入创建页面";
             entity.images = @[@"test_icon_image"];
             entity.date = @"100分钟前";
             entity.state = @"2";
             entity.wantCount = @"700";
-            entity.comment = @"I’m telling you that if you can read this article.";
+            entity.comment = @"You can read this article.";
             [self.dataArray addObject:entity];
         }
         
@@ -73,11 +73,11 @@ static float const H_ADVIEW_HEIGHT           = 120;
                 entity.inCount = @"10";
                 entity.outCount = @"20";
                 entity.name = @"黄伟华测试";
-                entity.content = @"I’m telling you that if you can read this article, look through this list and not claim it as your own, then you should be a little worried.Actually, you should be very worried. You should drop everything and immediately  question your existence on earth. You should find a mirror, look yourself in the eyes, raise your hand and slap yourself in the face.Got it? Now repeat that until you come to your senses and continue reading whenever you’re ready.";
+                entity.content = @"任务与交易联系 状态类似于q'q签名一样的性质.";
                 entity.date = @"1分钟前";
                 entity.state = @"1";
                 entity.wantCount = @"007";
-                entity.comment = @"Now repeat that until you come to your senses and continue reading whenever you’re ready.";
+                entity.comment = @"你说这个...";
                 [self.dataArray addObject:entity];
             }else
             {
@@ -86,12 +86,12 @@ static float const H_ADVIEW_HEIGHT           = 120;
                 entity.inCount = @"321";
                 entity.outCount = @"123";
                 entity.name = @"just believe me ";
-                entity.content = @"I’m telling you that if you can read this article, look through this list and not claim it as your own, then you should be a little worried.Actually, you should be very worried. You should drop everything and immediately  question your existence on earth. You should find a mirror, look yourself in the eyes, raise your hand and slap yourself in the face.";
+                entity.content = @"你说这个 我就想起 我们培训的时候遇到一个老师 特别搞笑 他特别爱挑bug 然后你问他的时候他如果解决不了就说是系统机制问题. 你说这个 我就想起 我们培训的时候遇到一个老师 特别搞笑 他特别爱挑bug 然后你问他的时候他如果解决不了就说是系统机制问题";
                 entity.images = @[@"test_icon_image", @"test_icon_image", @"test_icon_image"];
                 entity.date = @"100分钟前";
                 entity.state = @"2";
                 entity.wantCount = @"700";
-                entity.comment = @"I’m telling you that if you can read this article.";
+                entity.comment = @"Read this article.";
                 [self.dataArray addObject:entity];
             }
         }

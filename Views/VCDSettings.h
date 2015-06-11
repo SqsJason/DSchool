@@ -38,6 +38,7 @@
 
 @property (strong, nonatomic) IBOutlet UIView *vFooterV;
 @property (weak, nonatomic) IBOutlet UIButton *btnExit;
+- (IBAction)btnLogout_action:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *CellExit;
 
