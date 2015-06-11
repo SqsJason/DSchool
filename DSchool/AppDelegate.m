@@ -80,11 +80,11 @@
     UIViewController *firstNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
-    UIViewController *secondViewController = [[VCDMessages alloc] init];
+    UIViewController *secondViewController = [[VCDFriendsCircle alloc] init];
     UIViewController *secondNavigationController = [[UINavigationController alloc]
                                                     initWithRootViewController:secondViewController];
     
-    UIViewController *thirdViewController = [[VCDDiscovery alloc] init];
+    UIViewController *thirdViewController = [[VCDMessages alloc] init];
     UIViewController *thirdNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:thirdViewController];
     
@@ -104,7 +104,7 @@
 - (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
     UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
     UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
-    NSArray *tabBarItemImages = @[@"home", @"message", @"discovery", @"mine"];
+    NSArray *tabBarItemImages = @[@"home", @"discovery", @"message", @"mine"];
     
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
@@ -231,11 +231,6 @@
     if (self.window.rootViewController!=nil) {
         self.window.rootViewController = nil;
     }
-//    VCSHome *gotoHome              = [[VCSHome alloc] initWithNibName:@"VCSHome" bundle:nil];
-//    RDVTabBarController *mainTab   = [self setupViewControllers];
-//    UINavigationController *nav    = [[UINavigationController alloc] initWithRootViewController:mainTab];
-//    self.window.rootViewController = nav;
-//    [self customizeInterface];
     
     [self setupViewControllers];
     [self.window setRootViewController:self.baseController];
